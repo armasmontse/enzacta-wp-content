@@ -1,0 +1,732 @@
+/* Fonts */
+
+/* Main Colors variables */
+:root {
+	--primary-color: #299973;
+}
+
+/* Init CSS base */
+
+a:link, a:visited, a:hover, a:focus, a:activo
+{
+	color:none;
+	text-decoration: none;
+	display:inline-block;
+}
+
+p, a, li, h2, h1, button, textarea, input
+{
+	word-break: keep-all;
+	font-family: "Lato", Sans-serif !important;
+}
+
+table
+{
+	border: none;
+	border-top: none !important;
+	border-left: none !important;
+	border-collapse: collapse;
+}
+
+tr, td
+{
+	padding: 0px;
+}
+
+html {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--secondary-color);
+}
+
+.page-title.header {
+    display: none;
+}
+
+/*HOME PAGE STYLES*/
+.WP-contact-title
+{
+	color:  #808080;
+	font-weight: 600;
+	text-align: center;
+}
+
+.WP-contact-separator
+{
+	width: 40px;
+	height: 5px;
+	background-color: var(--primary-color);
+	margin: auto;
+}
+
+.WP-contact-form-container {
+    width: calc(100% - 0px);
+    padding: 0px;
+    margin: auto;
+    max-width: 820px;
+}
+
+.WP-contact-label
+{
+	color: #606060;
+	font-weight: 400;
+}
+
+.WP-contact-input
+{
+	width: 100%;
+	border: 1px solid #DCDCDC;
+	padding: 5px 14px;
+	min-height: 40px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	color: #299973;
+}
+
+.WP-contact-textarea
+{
+	width: 100%;
+	border: 1px solid #DCDCDC;
+	padding: 5px 14px;
+	min-height: 120px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	color: #299973;
+}
+
+.WP-contact-button {
+	all: unset;
+	display: block;
+	color: white;
+	background-color: #299973!important;
+	border-radius: 10px;
+	padding: 0px 24px;
+	width: 200px;
+	text-align: center;
+	min-height: 40px;
+	margin: auto;
+	cursor: pointer;
+	transition: all 0.3s;
+	font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif !important;
+}
+
+.WP-contact-button:hover
+{
+	background-color: #1ed597!important;
+	transition: all 0.3s;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+
+.WP-contact-address-container
+{
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100% - 40px);
+	margin: auto;
+	padding: 20px;
+	column-gap: 20px;
+	max-width: 1000px;
+}
+
+
+.WP-contact-address-icon-container
+{
+	display: flex;
+	flex: 100%;
+}
+
+.WP-contact-address-text-container
+{
+	display: flex;
+	flex: 100%;
+	flex-wrap: wrap;
+}
+
+.WP-contact-address-title {
+	color: var(--primary-color);
+	font-weight: 400;
+	flex: 100%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif !important;
+}
+
+.WP-contact-address-text
+{
+	color: #7A7A7A;;
+	font-weight: 400;
+	flex: 100%;
+	margin-top: 15px;
+	line-height: 30px;
+}
+
+.WP-contact-address-text-break
+{
+	word-break: break-word !important;
+}
+
+.WP-contact-address-text-description
+{
+	color: #7A7A7A;;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	margin: 30px 0 40px 0 !important;
+}
+
+.WP-contact-address-text-description-container
+{
+	width: calc(100% - 40px);
+	padding: 20px;
+	margin: auto;
+}
+
+.WP-map-container 
+{
+	position: relative;
+	width: 100%;
+	padding-bottom: 300px;
+	height: 0;
+	overflow: hidden;
+	margin: auto;
+	max-width: 600px;
+	max-height: 300px;
+}
+.WP-map-container iframe 
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	max-height: 300px;
+}
+/*RESPONSIVE STYLES*/
+
+.flexme
+{
+	display: flex;
+}
+
+.containerflexwrap
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block01 {flex: 8.333%;}
+.block02 {flex: 16.666%;}
+.block03 {flex: 25%;}
+.block04 {flex: 33.333%;}
+.block05 {flex: 41.666%;}
+.block06 {flex: 50%;}
+.block07 {flex: 58.333%;}
+.block08 {flex: 66.666%;}
+.block09 {flex: 75%;}
+.block10 {flex: 83.333%;}
+.block11 {flex: 91.666%;}
+.block12 {flex: 100%;}
+.blockauto {flex: 1 1 auto;}
+
+
+@media (max-width: 767px)
+{
+  .block01, .block02, .block03, .block04, .block05, .block06, .block07, .block08, .block09, .block10, .block11, .block12, .blockauto
+  {
+  	flex: 100%;
+  }
+}
+
+/* MEDIA FOR SPECIAL CASES */
+@media only screen and (min-width: 0px) {
+  	.visibledesk{display: none;}
+  	.visibledevice{display: initial}
+
+	.WP-contact-address-icon-img {
+		width: 100%;
+		display: block;
+		margin: 10px auto 10px auto;
+		max-width: 70px;
+		flex: 100%;
+	}
+
+	.WP-contact-address-icon-container
+	{
+		flex-wrap: wrap;
+	}
+
+	.WP-contact-address-title, .WP-contact-address-text, .WP-contact-address-text-break
+	{
+		text-align: center;
+	}
+
+}
+
+@media only screen and (min-width: 768px)
+{
+		
+  	.visibledesk{display: initial}
+  	.visibledevice{display: none;}
+
+	.WP-contact-address-icon-img {
+		width: 100%;
+		display: block;
+		margin: 0px 0px auto auto;
+		max-width: 70px;
+		flex: 0%;
+	}
+
+	.WP-contact-address-icon-container
+	{
+		flex-wrap:  nowrap;
+	}
+
+	.WP-contact-address-title, .WP-contact-address-text, .WP-contact-address-text-break
+	{
+		text-align: left;
+	}
+}
+
+
+.margintop5
+{
+	margin-top: 5px;
+}
+.margintop10
+{
+	margin-top: 10px;
+}
+.margintop20
+{
+	margin-top: 20px;
+}
+.margintop40
+{
+	margin-top: 40px;
+}
+.margintop50
+{
+	margin-top: 50px;
+}
+.margintop60
+{
+	margin-top: 60px;
+}
+.margintop80
+{
+	margin-top: 80px;
+}
+.margintop100
+{
+	margin-top: 100px;
+}
+.marginbottom0
+{
+	margin-bottom: 0px;
+}
+.marginbottom20
+{
+	margin-bottom: 20px;
+}
+.marginbottom40
+{
+	margin-bottom: 40px;
+}
+.marginbottom60
+{
+	margin-bottom: 60px;
+}
+.marginbottom80
+{
+	margin-bottom: 80px;
+}
+.marginbottom100
+{
+	margin-bottom: 100px;
+}
+.paddingbottom0
+{
+	padding-bottom: 0px;
+}
+.paddingbottom60
+{
+	padding-bottom: 60px;
+}
+.paddingbottom100
+{
+	padding-bottom: 100px;
+}
+.paddingtop60
+{
+	padding-top: 60px;
+}
+.paddingtop100
+{
+	padding-top: 100px;
+}
+
+.centerme
+{
+	margin: auto;
+}
+
+.WP-relative
+{
+	position: relative;
+}
+
+/* FONT SIZE */
+
+.WP-button-text
+{
+	font-size: 16px;
+}
+
+.WP-normal-text {
+	font-size: 18px;
+	font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif !important;
+}
+
+.WP-title-text {
+	font-size: 28px;
+	font-family: 'Nanum Gothic', Arial, Helvetica, sans-serif !important;
+}
+
+.WP-subtitle-text
+{
+	font-size: 20px;
+}
+
+/* Business Center Tabs - MX ----- START */
+.oficinas {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.tab {
+    border: 1px solid #b7b7b7;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #ffffff!important;
+    color: #299973;
+}
+
+.tab:hover {
+  background: #37d29d;
+}
+button.tab:hover {
+    color: #ffffff;
+    background: #299973!important;
+}
+
+.tab.activo {
+    background: #299973!important;
+    color: #fff;
+}
+
+.tab-content { display: none; }
+
+.tab-content.activo { display: block; }
+
+div#cdmx, div#guadalajara, div#monterrey {
+    width: 100%;
+}
+#cdmx .block03, #guadalajara .block03, #monterrey .block03 {
+    margin-bottom: 20px;	
+}
+div.WP-contact-address-container {
+    background-color: #ffffff!important;
+}
+button.tab[data-tab="cdmx"] {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+button.tab[data-tab="guadalajara"] {
+    border-left: none;
+    border-right: none;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+button.tab[data-tab="monterrey"] {
+    border-radius: 6px !important;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+.bc-address {
+    margin: 40px;
+}
+.accordion-header.mobile {
+    display: none;
+}
+/* Business Center Tabs - MX ----- END */
+
+/* --- Acordeón visible solo en móviles --- */
+.accordion-container {
+  display: none;
+}
+
+.accordion-header { display: none; }
+
+.accordion-body { display: flex; } /* will be controlled in mobile media query */
+
+.accordion-header.active {
+  background-color: #155d27;
+}
+
+.accordion-content {
+  display: none;
+  padding: 15px;
+  border: 1px solid #e1e1e1;
+  background: #f9f9f9;
+}
+
+div#guadalajara, div#monterrey {
+    margin-top: 60px;
+}
+button.WP-contact-button {
+    font-size: 16px;
+}
+button.tab {
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+	.tabs { display: none; }
+
+  /* Show each tab-content as an accordion item container */
+	.tab-content {
+		display: block !important;
+		overflow: hidden;
+	}
+
+	.WP-contact-address-container {
+		padding: 0;
+	}
+	button.accordion-header {
+		border: solid 1px #dcdcdc;
+		font-size: 16px;	
+	}
+	/* Show accordion header */
+	.accordion-header {
+		display: none;
+		width: 100%;
+		text-align: left;
+		padding: 14px 16px;
+		background: #007c47;
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		font-weight: 700;
+		outline: none;
+	}
+
+	/* collapsed body by default; .open will show it */
+	.accordion-body {
+		/* display: none; */
+		padding: 12px 16px;
+		background: #fff;
+	}
+
+	.accordion-body.open {
+		display: flex;
+	}
+
+	/* make sure .activo class doesn't force only one visible on mobile */
+	.tab-content.activo { /* keep styles but don't force visibility rules */ }
+
+	img.WP-contact-address-icon-img {
+		max-width: 70px;
+	}
+	.WP-contact-address-icon-container {
+		justify-content: center;
+	}
+	p.WP-contact-address-text-description {
+		margin: 0 auto;
+		font-size: 18px;
+		padding: 10px 0;
+	}
+	p {
+		font-size: 18px;
+	}
+	div#guadalajara, div#monterrey {
+		margin-top: 0;
+	}
+	.oficinas {
+		max-width: 100%;
+	}
+
+	.icons--flex {
+		flex-direction: column;
+	}
+	.WP-contact-address-icon-container.icons__watch {
+        margin: 0 !important;
+    }
+	.oficinas {
+        padding: 0;
+    }
+	.WP-title-text {
+		font-size: 24px;
+	}
+}
+
+/* WARNING FIELDS */
+
+.EJ-warning-field {
+    border: 2px solid #D3232A !important;
+}
+
+.EJ-warning-field-container {
+    padding: 12px 10px 15px 10px;
+    background-color: #FBE7DD;
+    margin: 20px auto 0 !important;
+    border: 2px solid #D3232A;
+    border-radius: 8px;
+    display: flex;
+}
+
+.EJ-form-fa-icon-warning {
+    padding-top: 3px;
+    color: #D3232A;
+    font-size: 22px;
+}
+
+.EJ-warning-icon {
+    float: left;
+    width: 10%;
+}
+
+.EJ-warning-info {
+    float: left;
+    width: 80%;
+}
+
+.EJ-warning-info-txt {
+    color: #D3232A;
+    margin-bottom: 10px;
+    font-weight: 700;    
+}
+
+.EJ-warning-missing-fields {
+    color: #D3232A;
+    font-weight: 500;  
+    padding-left: 30px;
+}
+
+.elementor-message {
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Green Success State */
+.elementor-message-success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+/* Red Error State */
+.elementor-message-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.entry-content .EJ-warning-field-container
+{
+	max-width: 336px;
+	margin: 10px auto;
+}
+
+.entry-content .EJ-warning-field-container .EJ-warning-missing-fields
+{
+	padding-left: 0px;
+}
+
+.entry-content .EJ-warning-field-container .warning-info
+{
+	font-size: 13px!important;
+}
+
+#contact-response-banner
+{
+    width: 100%;
+    max-width: 730px;
+    margin: auto;
+}
+
+.elementor-message.elementor-message-success
+{
+	font-size: 18px;
+}
+
+/* =============== MAG 260423 =============== */
+/* ----- Start ----- */
+.icons--flex {
+	width: 100%;
+	display: flex;
+}
+
+.WP-contact-address-icon-container.icons__watch {
+    margin: 0 0 0 10px;
+}
+
+.WP-contact-address-title {
+	font-size: 22px;
+}
+
+.block03.icons__cards {
+    flex: 1 1 0 !important;
+}
+
+@media (max-width: 1024px) {
+	.WP-contact-address-icon-container.icons__watch {
+		margin: 0;
+	}
+}
+
+@media (max-width: 1280px) {
+	.WP-contact-address-container {
+		padding: 0;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.icons--flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+    }
+
+    .icons__cards:last-child {
+        grid-column: 1 / -1;
+		width: 250px;
+    }
+	
+}
+/* ----- End ----- */

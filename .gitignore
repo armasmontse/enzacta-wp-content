@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+*.log
+
+cache/
+upgrade/
+uploads/
+
+**/[0-9][0-9][0-9][0-9][0-9][0-9]/
+**/*_back
+**/*_back.*
+**/*_v[0-9]
+**/*_v[0-9].*

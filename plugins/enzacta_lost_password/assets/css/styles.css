@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/*MODAL BOX - S T A R T -  MODAL BOX - S T A R T -  MODAL BOX - S T A R T -  MODAL BOX - S T A R T -  
+*/
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+    display: none;
+}
+
+.EJ-form-field {
+	width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    border: 2px solid #cccccc;
+    border-radius: 8px;
+    margin-top: 8px;
+	/*margin-bottom: 15px */
+    margin-bottom: 1px;  /*edited by jmatics*/
+	padding-left: 15px;
+    color: #299973;
+    font-family: 'Lato';
+    font-size: 18px;
+}
+.fa-times-circle {
+    cursor: pointer;
+    text-align: right;
+    font-size: 32px;
+    color: #299973;
+    padding: 9px 13px 0 0;
+    margin-right: -30px;
+    margin-top: -30px;
+}
+
+p.EJ-mbox-close {
+    float: right;
+}
+
+div#expire_password_form {
+    padding: 40px;
+}
+
+h4.EJ-mbox-sec-code-title {
+    color: #299973;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.EJ-mbox-foreigners-text {
+    font-size: 16px;
+    color: #606060;
+    white-space: nowrap;
+}
+
+.EJ-mbox-foreigners-text td {
+    padding-right: 10px;
+}
+
+.EJ-continue-button {
+    text-align: center;
+    background: #299973;
+    min-height: 40px;
+    width: 20%!important;
+    border-radius: 8px!important;
+    box-sizing: border-box;
+    padding: 12px 10px;
+    margin: 50px auto 15px auto;
+    text-decoration: none;
+    height: 20px;
+    display: table;
+}
+
+
+.po-mb-field-code {
+	width: 36px;
+    height: 44px;
+    box-sizing: border-box;
+    border: 2px solid #cccccc!important;
+    border-radius: 8px;
+    margin: 8px 3px 15px 3px;
+    padding-left: 9px!important;
+    font-family: 'Lato' !important;
+    font-weight: 100;
+    font-size: 23px!important;
+}
+
+.po-mb-fields-container input#email	{
+	width: 100% !important;
+}
+.po-mb-fields-container select#phone_code {
+    min-width: auto;
+    height: 44px!important;
+    margin: 0;
+    border-radius: 8px 0 0 8px;
+}
+.po-mb-fields-container input#phone_number {
+    min-width: 70%;
+    width: 70%;
+    margin-left: -5px;
+    border-radius: 0 8px 8px 0;
+}
+#contact_info_response .po-mb-field-code {
+    margin: 8px 3px 15px 3px;
+    font-size: 18px!important;
+    font-weight: 600;
+    padding: 3px!important;
+}
+
+p.po-mb-text.po-mb-text-width {
+    width: 100%;
+    padding-top: 20px;
+    display: block;
+}
+
+.po-mb-loader {
+	width: 402px;
+	height: 20px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.EJ-continue-button-text {
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0;
+}
+
+.EJ-continue-button:hover {
+    background: #37d29d;
+}
+
+caption, th, td {
+    text-align: unset;
+}
+
+html, body, div, span, applet, object, iframe, h3, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    vertical-align: middle;
+}
+
+table {
+    border-spacing: 0 10px;
+}
+
+@media only screen and (max-width: 324px){
+    .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+        width: 100%!important;
+    }
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+    width: unset!important;
+}
+
+@media only screen and (max-width: 450px) 
+{    
+	.EJ-mbox-foreigners-text td    
+	{
+		display: flex;        
+		justify-content: space-between;       
+		padding: 10px;       
+	}
+}
+
+
+/*MODAL BOX - E N D S -  MODAL BOX - E N D S -  MODAL BOX - E N D S -  MODAL BOX - E N D S -  
+*/
+
+/* MKT ---- RRM ---- Password Expired ---- WENZ-929 ---- START ---- START ---- START */
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable[aria-describedby="expire_password_form"] {
+    max-width: 90%;
+}
+.EJ-mbox-foreigners-space .EJ-mbox-foreigners-text {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    white-space: unset;
+    width: 920px;
+}
+.EJ-mbox-foreigners-text table {
+    width: 90%;
+}
+.EJ-mbox-foreigners-text td:nth-child(odd) {
+    width: 20%;
+}
+.EJ-mbox-foreigners-text td:nth-child(even) {
+    width: 80%;
+}
+
+@media only screen and (max-width: 450px) {
+    .EJ-mbox-foreigners-text td:nth-child(odd) {
+        width: 90%;
+    }
+    .EJ-mbox-foreigners-text td:nth-child(even) {
+        width: 90%;
+    }
+}
+.EJ-mbox-foreigners-space .EJ-warning-field-container {
+    width: 336px;
+    margin: 0 auto;
+}
+.EJ-warning-icon {
+    float: left;
+    width: 10%;
+    padding-right: 15px;
+}
+.EJ-warning-missing-fields {
+    padding-left: 0px;
+}
+@media only screen and (max-width: 553px) {
+    .EJ-mbox-foreigners-space .EJ-warning-field-container {
+    width: 90%;
+}
+}
+/* MKT ---- RRM ---- Password Expired ---- WENZ-929 ---- END ---- END ---- END */
+
+
+/*MODAL BOX - E N D S -  MODAL BOX - E N D S -  MODAL BOX - E N D S -  MODAL BOX - E N D S -  
+*/
+
+/* MKT ---- RRM ---- Lost Password ---- WENZ-911 ---- START ---- START ---- START */
+.ui-dialog-content {
+    padding: 26px;
+    padding-top: 30px;
+}
+.EJ-mbox-foreigners-text table {
+    width: 90%;
+    margin: 20px auto;
+    float: left;
+    text-align: center;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+    width: 90%!important;
+    max-width: 800px;
+}
+.EJ-mbox-foreigners-space .EJ-mbox-foreigners-text {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+    white-space: unset;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+}
+label.po-mb-text.po-mb-form-spacer {
+    margin-right: 25px;
+}
+#lost-password-service-loader img {
+    margin: 0 auto;
+    display: block;
+}
+@media only screen and (max-width: 450px) {
+    #contact_info_response .EJ-mbox-foreigners-text {
+    margin-top: 0!important;
+    margin-bottom: 0!important;
+}
+.EJ-mbox-foreigners-space .EJ-mbox-foreigners-text {
+    margin-bottom: 0;
+}
+#contact_info_response .EJ-mbox-foreigners-text table {
+    margin-top: 0;
+}
+.EJ-mbox-foreigners-text table:nth-child(2) {
+    margin-bottom: 0;
+}
+}
+/* MKT ---- RRM ---- Lost Password ---- WENZ-911 ---- END ---- END ---- END */
+/* WENZ-911 ---- EDU ---- LOST PASS CORRECTIONS ---- START ---- START ---- START */
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable[aria-describedby="lost_password_form"] #lost_password_form
+{
+    overflow: hidden!important;
+}
+
+#contact_info_response .po-mb-field-code
+{
+    text-align: center;
+}
+
+.EJ-mbox-foreigners-space
+{
+    padding: 10px;
+}
+
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable[aria-describedby="lost_password_form"] input[type="checkbox"], .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable[aria-describedby="lost_password_form"] input[type="radio"] 
+{
+    height: 16px;
+}
+
+@media only screen and (max-width: 600px)
+{
+    #contact_info_response .po-mb-field-code
+    {
+        width: 32px;
+    }
+
+    p.EJ-mbox-close 
+    {
+        float: right;
+        margin-right: 23px;
+        margin-top: 28px;
+    }
+}
+
+/* WENZ-911 ---- EDU ---- LOST PASS CORRECTIONS ---- END ---- END ---- END */
+@media screen and (min-width: 451px) and (max-width: 553px) {
+span.EJ-form-field-note {
+    display: block;
+    width: 360px;
+    margin-left: 0px;
+}
+}
+@supports (-webkit-touch-callout: none) {
+  @media only screen 
+    and (device-width: 375px) 
+    and (device-height: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    .EJ-mbox-foreigners-text td:nth-child(odd) {
+      width: 40%;
+    }
+    .EJ-mbox-foreigners-text td:nth-child(even) {
+      width: 50%;
+    }
+    .EJ-mbox-foreigners-text tr:nth-child(2) .EJ-form-field-note {
+      margin-left: -126px !important;
+      float: left;
+      text-align: center;
+    }
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  @media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
+      
+    .EJ-mbox-foreigners-text td:nth-child(odd) {
+      width: 40%;
+    }
+    .EJ-mbox-foreigners-text td:nth-child(even) {
+      width: 50%;
+    }
+    .EJ-mbox-foreigners-text tr:nth-child(2) .EJ-form-field-note {
+      margin-left: -126px !important;
+      float: left;
+      text-align: center;
+    }
+  }
+}
+.cursor-block{
+    cursor: pointer;
+    position: relative;
+}
+a.fit-to-parent::after{
+   content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

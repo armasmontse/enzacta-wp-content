@@ -1,0 +1,506 @@
+.woocommerce form .form-row .input-text {
+	border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 9px 10px;
+	color: #299973;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+	outline: 0;
+    line-height: normal;
+}
+.woocommerce form .form-row select {
+	width: 100%;
+	color: #299973;
+	display: inline-block;
+	box-sizing: border-box;
+    height: 43px;/*44*/
+	padding-left: 10px; /*16*/
+    font-family: 'Lato', sans-serif;
+	font-size: 16px; /*18*/
+	border: 2px solid #dcdcdc;
+    border-radius: 8px;
+	line-height: inherit;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	background: #f1f1f1;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+	background-position: right 15px top 19px, right 10px top 19px;
+	background-size: 5px 5px, 5px 5px;
+	margin-top: 4px;/*8px*/
+	margin-bottom: 5px; /*15*/
+}
+
+.woocommerce-form-login .form-row .input-text {
+	color: #616161 !important;
+}
+
+.EJ-form-pay-other-cbox {
+	width: 90%;
+	margin: 30px auto 20px auto;
+}
+billing-fields input.input-text, .wc-payment-form input.input-text, .woocommerce-shipping-fields__field-wrapper input.input-text {
+    color: #299973;
+}
+
+.show-password-input {
+	    background-color: transparent !important;
+}
+
+/* Hide the entire row (both heading + Pay button) */
+/* Hides the "Actions:" label */
+/*
+.woocommerce-order-details tfoot tr:has(.order-actions--heading) {
+    display: none !important;
+}*/
+/*.woocommerce form .form-row select
+.woocommerce-checkout #payment div.payment_box input.input-text,*/
+
+/* MKT 250918 --- FIX STYLE ISSUES --- START --- START --- START */
+.woocommerce form .show-password-input::before, .woocommerce-page form .show-password-input::before {
+    height: 18px;
+    width: 18px;
+    opacity: .6;
+}
+
+/* CONTACT US FIXES - START */
+h3.elementor-image-box-title {
+    color: rgb(41, 153, 115);
+    font-size: 22px;
+    font-weight: 400;
+}
+figure.elementor-image-box-img {
+    width: 35%;
+    margin-right: 17px !important;	
+}
+.elementor-widget-image-box .elementor-image-box-img img {
+    margin-left: 0!important;
+}
+p.elementor-image-box-description {
+    font-size: 18px;
+}
+.elementor-column.elementor-col-33.elementor-top-column.elementor-element.elementor-element-3e3947f {
+    width: 20%;
+}
+.elementor-column.elementor-col-33.elementor-top-column.elementor-element.elementor-element-a8b834d {
+    width: 59.332%;
+}
+.elementor-column.elementor-col-33.elementor-top-column.elementor-element.elementor-element-d705b4e {
+    width: 20%;
+}
+.elementor-element.elementor-element-0d44513.elementor-widget.elementor-widget-text-editor p {
+    font-size: 18px;
+    text-align: center;
+}
+@media (max-width: 767px) {
+figure.elementor-image-box-img {
+    width: unset;
+}
+.elementor-column.elementor-col-33.elementor-top-column.elementor-element.elementor-element-a8b834d {
+    width: unset;
+}
+.elementor-element-188fd79 h3.elementor-image-box-title {
+    font-size: 26px;
+}
+}
+.elementor-element.elementor-element-090ad9d.elementor-widget.elementor-widget-google_maps {
+    max-width: 600px;
+    margin: auto;
+}
+.elementor-element-188fd79 img {
+    padding-top: 10px;
+}
+.elementor-element-0d44513 .elementor-widget-container {
+    padding: 030px 0px 030px 0px;
+}
+.elementor-element-8e9341b span.elementor-button-text {
+    padding-left: 5px;
+}
+.elementor-image-box-img img {
+    padding-top: 10px;
+    width: 70px !important;
+    height: 60px !important;
+    min-width: 70px !important;
+    margin: auto;
+}
+.elementor-16518 .elementor-element.elementor-element-eb253ce .elementor-tab-title {
+    font-weight: 400!important;
+}
+
+/* CONTACT US FIXES - END */
+
+/* Partner Products Fixes - START */
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-16edd31a.elementor-section-full_width.elementor-section-stretched.elementor-hidden-tablet.elementor-hidden-mobile.elementor-section-height-default.elementor-section-height-default {
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 20;
+    opacity: 1;
+    visibility: inherit;
+}  
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-b70e735.elementor-section-full_width.elementor-section-stretched.elementor-section-height-default.elementor-section-height-default {
+    width: unset!important;
+    left: unset!important;
+}  
+/* Partner Products Fixes - START */
+
+/* DASHBOARD FONT SELECTOR FONT-SIZE - START */
+select#bank-name, select#cash-receipt-type, select#spyr_capitalepay-card-expiry-month, select#spyr_capitalepay-card-expiry-year, select#spyr_capitalepay-kicc-card, select#kicc-card-fin-month {
+    margin: 0;
+    appearance: none;
+    background: #f1f1f1;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg, transparent 50%, currentColor 50%), linear-gradient(135deg, currentColor 50%, transparent 50%);
+    background-position: right 15px top 19px, right 10px top 19px;
+    background-size: 5px 5px, 5px 5px;
+    font-size: 14px;
+    border: 2px solid #dcdcdc; /* ===== MAG | 1088 | 260622 ===== */
+    border-radius: 8px;
+    line-height: inherit;
+    box-sizing: border-box;
+    height: 44px;
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: inline-block;
+}
+/* ==================== +++ MAG +++ WENZ-1088 +++ 260629 +++ ==================== */
+#spyr_capitalepay-card-expiry-month {
+    margin-right: 10px !important;
+}
+@media only screen and (max-width: 600px) {
+    #spyr_capitalepay-card-expiry-month {
+        margin-right: 0px !important;
+        margin-bottom: 10px !important;
+    }
+    .page-id-14870 #post-14870 #wc-kor-bank-deposit-cc-form select#bank-name, .page-id-14870 #post-14870 #wc-kor-bank-deposit-cc-form select#cash-receipt-type {
+        width: 100%;
+    }
+}
+/* ==================== +++ MAG +++ WENZ-1088 +++ 260629 +++ ==================== */
+/* DASHBOARD FONT SELECTOR FONT-SIZE - END */
+
+/* SHOP graphic issues - START */
+.woocommerce-ordering span.customSelectInner {
+    width: 153px!important;
+    display: inline-block!important;
+}
+#wc-kor-bank-deposit-cc-form .EJ-form-expdate-month {
+    border-color: #dcdcdc !important;
+}
+.place-order select#order_left_right {
+    padding-top: 0;
+    padding-left: 13px;
+    padding-bottom: 0;
+    padding-right: 0;
+    border: 1px solid #cccccc;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 115px !important;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+@media (min-width: 1200px) {
+  select#order_left_right {
+    cursor: pointer;
+    appearance: none !important;
+    padding-right: 1em !important;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjk5OTczIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY2xhc3M9ImZlYXRoZXIgZmVhdGhlci1jaGV2cm9uLWRvd24iPjxwb2x5bGluZSBwb2ludHM9IjYgOSAxMiAxNSAxOCA5Ij48L3BvbHlsaW5lPjwvc3ZnPg==") !important;
+    background-repeat: no-repeat !important;
+    background-size: 14px !important;
+    background-position: calc(101% - 0.1em) 50% !important;
+    width: 100px !important;
+  }
+}
+
+.woocommerce form .form-row.woocommerce-validated input.input-text {
+    border-color: #dcdcdc;
+}
+.checkout-warning-container#notify ul.woocommerce-error.checkout-warning-fields strong, .checkout-warning-container#notify ul.woocommerce-error.checkout-warning-fields a {
+    color: #D3232A !important;
+    cursor: text;
+    user-select: text;
+    pointer-events: none;
+}
+p#shipping_address_nickname_description, p#shipping_korean_name_description, p#shipping_address_2_description, p#shipping_phone_description {
+    display: none;
+}
+
+/* SHOP graphic issues - END */
+
+/* DASHBOARD graphic issues - START */
+.edit-account select#customer_leg {
+    margin-top: 0;
+    height: unset;
+    line-height: normal;
+    font-size: 14px;
+}
+/* .woocommerce-ordering span.customSelectInner {
+    width: 153px!important;
+} */
+.woocommerce-ordering span.customSelectInner {
+    width: 86px!important;
+    min-width: 153px!important;
+}
+/* span.customSelectInner[style="width: 123px; display: inline-block;"] {
+    min-width: unset!important;
+} */
+article#post-4 span.customSelectInner {
+    width: 86px!important;
+    min-width: unset !important;
+}
+.woocommerce-ordering select.orderby.hasCustomSelect {
+    width: 222px!important;
+}
+body.wp-singular.page-template-default.page.page-id-14868.wp-theme-EnzactaKR.theme-EnzactaKR.woocommerce-shop.woocommerce.woocommerce-page.woocommerce-js.singular.elementor-default.elementor-kit-13327  span.customSelectInner {
+    min-width: 104px !important;
+}   
+body.wp-singular.page-template-default.page.page-id-14868.wp-theme-EnzactaKR.theme-EnzactaKR.woocommerce-shop.woocommerce.woocommerce-page.woocommerce-js.singular.elementor-default.elementor-kit-13327 select.orderby.hasCustomSelect {
+    width: 173px!important;
+}
+body.wp-singular.page-template-default.page.page-id-14868.logged-in.wp-theme-EnzactaKR.theme-EnzactaKR.woocommerce-shop.woocommerce.woocommerce-page.woocommerce-js.singular.elementor-default.elementor-kit-13327 span.customSelectInner {
+    min-width: 154px!important;
+}
+article#post-4 select.orderby.hasCustomSelect {
+    width: 155px !important;
+}
+body.wp-singular.page-template-default.page.page-id-14868.logged-in.wp-theme-EnzactaKR.theme-EnzactaKR.woocommerce-shop.woocommerce.woocommerce-page.woocommerce-js.singular.elementor-default.elementor-kit-13327 select.orderby.hasCustomSelect {
+        width: 222px!important;
+}
+/* DASHBOARD graphic issues - END */
+
+/* Lost Password issues - START */
+input#user_login:focus {
+    border-color: #dcdcdc;
+}
+input#user_login {
+    color: #616161;
+}
+/* 
+.woocommerce-validated input#shipping_checkout_search_address, .woocommerce-validated select#order_left_right, .woocommerce-validated input#shipping_address_nickname, .woocommerce-validated input#shipping_korean_name, .woocommerce-validated input#shipping_address_1, .woocommerce-validated input#shipping_address_2, .woocommerce-validated input#shipping_postcode, .woocommerce-validated input#shipping_phone {
+    border-color: #bbb3b9 !important;
+}
+*/
+#add_payment_method .checkout .checkout-inline-error-message, .woocommerce-cart .checkout .checkout-inline-error-message, .woocommerce-checkout .checkout .checkout-inline-error-message {
+    display: none;
+}
+.woocommerce form .form-row.woocommerce-validated .select2-container, .woocommerce form .form-row.woocommerce-validated input.input-text, .woocommerce form .form-row.woocommerce-validated select {
+   border-color: 1px solid #bbb3b9!important; 
+}
+input#shipping_checkout_search_address {
+    border: 2px solid #dcdcdc!important;
+}
+input#password_1, input#password_2 {
+    color: #616161 !important;
+}
+.woocommerce form .form-row .input-text:focus, .woocommerce form .form-row select:focus {
+    border-color: #dcdcdc;
+}
+/* Lost Password issues - END */
+
+/* HOME Position issue - START  */
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-16edd31a.elementor-section-full_width.elementor-section-stretched.elementor-hidden-tablet.elementor-hidden-mobile.elementor-section-height-default.elementor-section-height-default {
+    z-index: 0;
+}
+/* HOME Position issue - END  */
+
+/* CONTACT US space issues - START */
+.elementor-column.elementor-col-100.elementor-top-column.elementor-element.elementor-element-4fd7a24 {
+    height: 80px;
+}
+.elementor-element.elementor-element-f848649.elementor-widget.elementor-widget-spacer {
+    display: none;
+}
+/* CONTACT US space issues - END */
+
+/* MISSING FONT WEIGHTS - START */
+.nanum-gothic-regular {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nanum-gothic-bold {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.nanum-gothic-extrabold {
+  font-family: "Nanum Gothic", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.elementor-16518 .elementor-element.elementor-element-eb253ce .elementor-tab-title {
+    font-weight: 700!important;
+}
+/* MISSING FONT WEIGHTS - END */
+
+/* UNDEW missing images - START */
+    /* UNDEW SUN THE COVER - START */
+.elementor-22369 .elementor-element.elementor-element-24c1790d:not(.elementor-motion-effects-element-type-background), .elementor-22369 .elementor-element.elementor-element-24c1790d > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url("https://enzactamedia.enzacta.com/ewp/sites/4/2025/01/Serum-Table-back-N1.jpg")!important;
+}
+.elementor-22369 .elementor-element.elementor-element-1e8951ef .elementor-accordion-icon, .elementor-22351 .elementor-element.elementor-element-1e8951ef .elementor-accordion-icon {
+    margin-inline-end: unset!important;
+}
+    /* UNDEW SUN THE COVER - END */
+
+    /* UNDEW DOUBLE PEPTIDE CREAM - START */
+.elementor-22692 .elementor-element.elementor-element-3ee7a66b:not(.elementor-motion-effects-element-type-background), .elementor-22692 .elementor-element.elementor-element-3ee7a66b > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url("https://enzactamedia.enzacta.com/ewp/sites/4/2025/01/Serum-Table-back-N1.jpg")!important;
+}
+.elementor-22692 .elementor-element.elementor-element-2758697f .elementor-accordion-icon, .elementor-22662 .elementor-element.elementor-element-2758697f .elementor-accordion-icon {
+    margin-inline-end: unset!important;
+}
+    /* UNDEW DOUBLE PEPTIDE CREAM - START */
+
+    /* UNDEW FACIAL SERUM - START */
+.elementor-22241 .elementor-element.elementor-element-efa74bf:not(.elementor-motion-effects-element-type-background), .elementor-22241 .elementor-element.elementor-element-efa74bf > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-image: url("https://enzactamedia.enzacta.com/ewp/sites/4/2025/01/Serum-Table-back-N1.jpg")!important;
+}   
+.elementor-22241 .elementor-element.elementor-element-697d9a4a .elementor-accordion-icon, .elementor-22221 .elementor-element.elementor-element-697d9a4a .elementor-accordion-icon {
+    margin-inline-end: unset!important;
+}
+    /* UNDEW FACIAL SERUM - END */
+
+    /* UNDEW PEPTIDE TONER - START */
+.elementor-21873 .elementor-element.elementor-element-d236f14 .elementor-accordion-icon, .elementor-22290 .elementor-element.elementor-element-d236f14 .elementor-accordion-icon {
+    margin-inline-end: unset!important;
+}
+.elementor-21873 section#TONER-Testimonials-KR {
+    left: unset!important;
+    width: 100%!important;
+}
+    /* UNDEW PEPTIDE TONER - END */
+
+    /* UNDEW FACIAL CLEANSER - START */
+.elementor-21955 .elementor-element.elementor-element-6bff6cc5 .elementor-accordion-icon {
+    margin-inline-end: unset!important;
+}    
+.elementor-22135 .elementor-element.elementor-element-544c9c27:not(.elementor-motion-effects-element-type-background) {
+    background-image: url("https://enzactamedia.enzacta.com/ewp/sites/4/2025/01/Table-back-N1.jpg")!important;
+}
+    /* UNDEW FACIAL CLEANSER - END */
+/* UNDEW missing images - END */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  select#order_left_right {
+    cursor: pointer;
+    appearance: none !important;
+    padding-right: 1em !important;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjk5OTczIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTcgMTBsNS01IDUgNSIvPjxwYXRoIGQ9Ik03IDE0bDUgNSA1LTUiLz48L3N2Zz4=") !important;
+    background-repeat: no-repeat !important;
+    background-size: 14px !important;
+    background-position: calc(101% - 0.1em) 50% !important;
+    width: 100px !important;
+  }
+  .place-order select#order_left_right {
+    padding-left: 12px!important;
+  }
+}
+
+@media (max-width: 767px) {
+  select#order_left_right {
+    cursor: pointer;
+    appearance: none !important;
+    padding-right: 1em !important;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjk5OTczIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTcgMTBsNS01IDUgNSIvPjxwYXRoIGQ9Ik03IDE0bDUgNSA1LTUiLz48L3N2Zz4=") !important;
+    background-repeat: no-repeat !important;
+    background-size: 14px !important;
+    background-position: calc(101% - 0.1em) 50% !important;
+    width: 100px !important;
+  }
+  .place-order select#order_left_right {
+    padding-left: 9px!important;
+  }
+}
+
+
+@supports (-webkit-touch-callout: none) {
+  @media only screen 
+    and (device-width: 375px) 
+    and (device-height: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2) {
+
+    .place-order select#order_left_right {
+    padding-top: 0;
+    padding-left: 19px;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;    
+    }
+  select#order_left_right {
+    width: auto!important;
+  }  
+  #payment .woocommerce-validated select#order_left_right {
+    border: solid 1px #cccccc!important;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjk5OTczIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTcgMTBsNS01IDUgNSIvPjxwYXRoIGQ9Ik03IDE0bDUgNSA1LTUiLz48L3N2Zz4=")!important;
+  }
+  }
+}
+@supports (-webkit-touch-callout: none) {
+  @media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (-webkit-min-device-pixel-ratio: 3) {
+    
+    .place-order select#order_left_right {
+    padding-top: 0;
+    padding-left: 19px;
+    padding-bottom: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;    
+    }
+  select#order_left_right {
+    width: auto!important;
+  }  
+  #payment .woocommerce-validated select#order_left_right {
+    border: solid 1px #cccccc !important;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjk5OTczIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTcgMTBsNS01IDUgNSIvPjxwYXRoIGQ9Ik03IDE0bDUgNSA1LTUiLz48L3N2Zz4=")!important;
+  }
+  }
+}    
+form.woocommerce-EditAccountForm.edit-account input#password_1 {
+    color: #299973 !important;
+}
+form.woocommerce-EditAccountForm.edit-account input#password_2 {
+    color: #299973 !important;
+}
+
+
+/* ==================== +++ MAG +++ WENZ-1088 +++ 260622 +++ ==================== */
+
+#post-14870 #wc-kor-bank-deposit-cc-form select#bank-name, #post-14870 #wc-kor-bank-deposit-cc-form select#cash-receipt-type {
+    border: 2px solid #cccccc !important;
+}
+.page-id-14870 #post-14870 #wc-kor-bank-deposit-cc-form select#bank-name, .page-id-14870 #post-14870 #wc-kor-bank-deposit-cc-form select#cash-receipt-type {
+    border: 2px solid #dcdcdc !important;
+    width: 113px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .page-id-14870 #post-14870 #wc-kor-bank-deposit-cc-form select#bank-name, .page-id-14870 #post-14870 #wc-kor-bank-deposit-cc-form select#cash-receipt-type {
+        width: 100% !important;
+    }
+}
+
+.EJ-form-field-3boxes {
+    border-radius: 8px !important;
+}
+#customer_leg {
+    border-radius: 8px !important;
+}
+
+.wc-credit-card-form-card-number1,
+.wc-credit-card-form-card-name {
+    border: 2px solid #dcdcdc !important;
+}
+
+/* ==================== +++ MAG +++ WENZ-1088 +++ 260622 +++ ==================== */

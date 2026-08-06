@@ -1,0 +1,455 @@
+/* ROSY-ENZ-added to fix styles margin-top:75px- 210625 */
+.woocommerce-billing-fields__field-wrapper, .woocommerce-shipping-fields__field-wrapper {
+    font-family: 'Nanum Gothic', sans-serif;
+    position: relative; /* MKT added styles */
+}
+/*#billing_search_result-list {
+    float: left;
+    list-style: none;
+    margin-top: -58px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+    padding: 0 15px 20px 25px;
+    cursor: pointer;
+}
+
+#shipping_search_result-list {
+    float: left;
+    list-style: none;
+    margin-top: -58px;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.75);
+    padding: 0 15px 20px 25px;
+    cursor: pointer;
+}*/
+.woocommerce-billing-fields__field-wrapper table {
+    /*background: #299973;*/
+    /*color: #ffffff;*/
+    border-radius: 8px 8px 0 0;
+    /*margin-left: -25px;
+    width: 104.8%;*/
+    width: 100%;
+}
+
+.woocommerce-billing-fields__field-wrapper table th:last-child {
+    border-right: unset;
+}
+
+.woocommerce-billing-fields__field-wrapper table th {
+    line-height: 1.2;
+    text-align: left;
+   /* width: 29%;*/
+    display: inline;
+    float: left;
+    border-right: solid 1px #ffffff;
+    /*padding-left: 30px;*/
+    margin: 15px 0 0 0;
+   /* height: 16px;*/
+  
+}
+
+#billing_search_result-list li {
+    line-height: 40px;
+}
+#shipping_search_result-list li {
+    line-height: 40px;
+}
+#billing_search_result-list li:hover{background:#37d29d;cursor: pointer;}
+#shipping_search_result-list li:hover{background:#37d29d;cursor: pointer;}   
+
+
+#billing_suggestion-box {
+    box-shadow: 0px 4px 14px 0px rgb(0 0 0 / 30%);
+    background: white;
+    width: 100%;
+    position: relative;
+    top: 1px;
+    z-index: 1000;
+}
+#shipping_suggestion-box {
+    /* padding-top: 6%; */
+    width:100%;
+    box-shadow: 0px 4px 14px 0px rgb(0 0 0 / 30%);
+    background-color: #ffffff;
+    position: relative;
+} 
+.zipspan {
+    /* width: 30%;
+    border-right: 1px solid #808080;
+   margin-right: 20px;
+    padding: 20px;*/
+    cursor: pointer;
+} 
+
+.zipspan:last-child {
+    border-right: unset;
+} 
+    /*	ROSY-ENZ-added to fix styles - START----- 210809*/
+
+#billing_search_result-list li:first-child {
+    background: none;
+    cursor: unset;  
+}
+#shipping_search_result-list li:first-child {
+    background: none;
+    cursor: unset;  
+}
+
+    /*	ROSY-ENZ-added to fix styles - END----- 210809*/
+    /*....... dhanya*/
+
+
+.woocommerce-billing-fields__field-wrapper table tr:first-child td, .woocommerce-shipping-fields__field-wrapper table tr:first-child td{
+    background-color: #299973;
+    /*Commented by MKT - border-radius: 6px; */
+    text-align: center;
+    color: #ffffff;
+    padding:20px 13px !important;
+    /* Commented by MKT height: 20px; */
+    font-weight: bold;
+}
+.woocommerce-billing-fields__field-wrapper table td, .woocommerce-shipping-fields__field-wrapper table td{
+    /* Commented by MKT - background: #ffffff;
+    box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 22%); 
+    height:56px;*/
+    border-bottom: solid 1px #dddddd;
+    padding: 14px 8px;
+}
+table#billing_checkout_search_result-list tbody tr:hover, table#shipping_checkout_search_result-list tbody tr:hover, #shipping_search_result-list tr:hover {
+    background-color: #f1f1f1;
+    color: #299973;
+}
+
+  .norecord tr td{
+    background: #ffffff!important;
+    color:#000!important;
+    /* Commented by MKT - box-shadow: 2px 2px 8px 2px rgb(0 0 0 / 50%); */
+    height:unset!important;  
+  }
+
+table#billing_checkout_search_result-list, table#shipping_checkout_search_result-list {
+    margin-bottom: unset;
+}
+  
+  .woocommerce-shipping-fields__field-wrapper table tr:first-child td{
+    background-color: #299973;
+    /* border-radius: 6px; */
+    text-align: center;
+    color: #ffffff;
+    padding:20px 13px !important;
+    /* height: 20px; */
+}
+.woocommerce-shipping-fields__field-wrapper table td{
+    /* background: #ffffff;
+    box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 22%); 
+    height:56px;*/
+}
+.shipping_suggestion-box table tr:first-child td{
+    background-color: #299973;
+    border-radius: 6px;
+    text-align: center;
+    color: #ffffff;
+    padding:20px 13px !important;
+    height: 20px;
+}
+.shipping_suggestion-box table td{
+    background: #ffffff;
+    box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 22%);
+    height:56px;
+}
+#shipping_search_result-list tr:first-child td{
+    background-color: #299973;
+    /* border-radius: 6px; */
+    text-align: center;
+    color: #ffffff;
+    padding:20px 13px !important;
+    height: 20px;
+}
+#shipping_search_result-list td{
+    /*background: #ffffff;
+    box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 22%); 
+    height:56px;*/
+    border-bottom: solid 1px #dddddd;
+    padding: 14px 8px;
+}
+#billing_search_result-list tr:first-child td{
+    background-color: #299973;
+    /* border-radius: 6px; */
+    text-align: center;
+    color: #ffffff;
+    padding:20px 13px !important;
+    font-weight: bold;
+    /* height: 20px; */
+}
+#billing_search_result-list td{
+    /*background: #ffffff;
+    box-shadow: 1px 1px 8px 0px rgb(0 0 0 / 22%); 
+    height:56px;*/
+    border-bottom: solid 1px #dddddd;
+    padding: 14px 8px;
+}
+.EJ-form-zip-code-search{
+    width: 100% !important;
+}
+.ui-dialog{
+    left: 50% !important;
+    top:50% !important;
+    margin: 0 0 0 0!important;
+    padding-left: 0!important;
+    width: auto!important ;/*MKT REVIEW*/
+    -webkit-transform: translate(-50%,-13%) scale(1);
+    transform: translate(-50%,-13%) scale(1);
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    
+}
+@media screen and (max-width:878px){
+    .ui-dialog{
+    top: 700px !important;;
+    }
+}
+    
+
+.norecord tr{
+    margin-bottom: 0px!important;
+}
+
+#billing_checkout_suggestion-box .tooltiptext, #shipping_checkout_suggestion-box .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #37d29d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+    z-index: 1;
+    left: 33.5%;
+    top: -35px;
+}
+  
+  #billing_checkout_suggestion-box .tooltiptext {
+    visibility: visible;
+  }
+  /* #shipping_checkout_suggestion-box .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #777c80;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    right:20%;
+    top: 10%;
+  } */
+  
+  #shipping_checkout_suggestion-box .tooltiptext {
+    visibility: visible;
+  }
+  
+  #shipping_suggestion-box .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #37d29d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+    z-index: 1;
+    left: 34.8%;
+    top: -36px;
+  }
+  
+  #shipping_suggestion-box:hover .tooltiptext {
+    visibility: visible;
+  }
+  #billing_suggestion-box .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #37d29d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 6px 6px 0 0;
+    position: absolute;
+    z-index: 1;
+    left: 35%;
+    top: -36px;
+  }
+  
+  #billing_suggestion-box:hover .tooltiptext {
+    visibility: visible;
+  }
+  #EJ-form-container .tab-content{
+      height: auto!important;
+  }
+   /*....... */
+
+
+/* MKT STYLE TO FIX SEARCH ADDRESS WIDTH FOR REGISTRATION - START - START  */
+#EJ-wrapper div.EJ-form-zip-code-search {
+    width: 46%!important;
+}
+/* MKT STYLE TO FIX SEARCH ADDRESS WIDTH FOR REGISTRATION - ENDS - ENDS  */
+
+div#billing_checkout_suggestion-box, div#shipping_checkout_suggestion-box {
+    position: absolute;
+    top: 284px;
+    z-index: 1000;
+    box-shadow: 0px 4px 14px 0px rgb(0 0 0 / 30%);
+    background-color: #ffffff;
+    width: 100%;
+}
+table.norecord {
+    margin-bottom: unset!important;
+}
+#billing_checkout_search_result-list tr:nth-child(1)>td:nth-child(3), #shipping_checkout_search_result-list tr:nth-child(1)>td:nth-child(3), #billing_search_result-list tr:nth-child(1)>td:nth-child(3) {
+    text-transform: uppercase;
+}
+p#billing_company_field, p#shipping_company_field {
+    clear: both;
+}
+.woocommerce form .form-row label {
+    font-weight: unset!important;
+}
+.woocommerce form .form-row.woocommerce-validated input.input-text {
+    border-color: unset;
+}
+table#shipping_checkout_search_result-list {
+    margin-bottom: 0;
+}
+#billing_suggestion-box tbody tr:hover {
+    background-color: #f1f1f1;
+    color: #299973;
+   }
+table#billing_search_result-list {
+    margin-bottom: unset;
+}
+#billing_suggestion-box .norecord td {
+    padding: 20px 13px!important;
+    font-weight: bold;
+}
+#shipping_search_result-list tr:nth-child(1)>td:nth-child(3) {
+    text-transform: uppercase;
+}
+#shipping_suggestion-box td {
+    padding: 20px 13px !important;
+    font-weight: bold;
+}
+table#shipping_search_result-list {
+    margin-bottom: 0;
+}
+div#billing_checkout_korea_loader, div#shipping_checkout_korea_loader {
+    top: 368px;
+    z-index: 1000;
+    position: absolute;
+    background: white;
+    padding-left: 20px;
+}
+div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+    top: 280px!important;
+}
+input#billing_checkout_search_address, input#shipping_checkout_search_address {
+    background-position: center!important;
+    background-position-x: 98%!important;
+}
+input#billing_search_address, input#shipping_search_address {
+    background-position: center!important;
+    background-position-x: 98%!important;
+}
+@media screen and (max-width:1190px){
+    #billing_checkout_suggestion-box .tooltiptext, #shipping_checkout_suggestion-box .tooltiptext {
+        left: 30.5%;
+    }
+    #shipping_suggestion-box .tooltiptext {
+        left: 28.8%;
+    }
+    .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+        width: 90%!important;
+    }
+}
+@media screen and (max-width:995px){
+    #billing_checkout_suggestion-box .tooltiptext, #shipping_checkout_suggestion-box .tooltiptext {
+        left: 25.5%;
+    }
+    #shipping_suggestion-box .tooltiptext {
+        left: 20.8%;
+    }
+    #billing_suggestion-box .tooltiptext {
+    left: 29%;
+    }
+}
+@media screen and (max-width:877px){
+    #billing_checkout_suggestion-box .tooltiptext, #shipping_checkout_suggestion-box .tooltiptext {
+        left: 21.5%;
+    }
+    #shipping_suggestion-box .tooltiptext {
+        left: 26.8%;
+    }
+}
+@media screen and (max-width:768px){
+    #billing_checkout_suggestion-box .tooltiptext, #shipping_checkout_suggestion-box .tooltiptext {
+        left: 31.5%;
+    }
+    #shipping_suggestion-box .tooltiptext {
+        left: 10.8%;
+    }
+    #billing_suggestion-box .tooltiptext {
+        left: 23%;
+        }
+}
+@media screen and (max-width:508px){
+    #billing_checkout_suggestion-box .tooltiptext, #shipping_checkout_suggestion-box .tooltiptext {
+        left: 25.5%;
+    }
+    #shipping_suggestion-box .tooltiptext {
+        left: 7%;
+    }
+    #billing_suggestion-box .tooltiptext {
+        left: 7%;
+        }
+}
+@media screen and (max-width:403px){
+    #billing_checkout_suggestion-box .tooltiptext, #shipping_checkout_suggestion-box .tooltiptext {
+        left: 19.5%;
+    }
+    #shipping_suggestion-box .tooltiptext {
+        width: 162px;
+        left: 4%;
+        }
+    #billing_suggestion-box .tooltiptext {
+        width: 162px;
+        left: 4%;
+        }
+}
+
+/*  WENZ 275 EDH FIX BOX VERIFICATION ALIGN- START----- 230102*/
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable[aria-describedby="korean_name_validation_form"]
+{
+    position: fixed!important;
+    max-width: 400px!important;
+}
+.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable[aria-describedby="contact_validation_form_email"], .ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable[aria-describedby="contact_validation_form_phone"]
+{
+    max-width: 400px!important;
+}
+div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+    top: 200px!important;
+}
+/*  WENZ 275 EDH FIX BOX VERIFICATION ALIGN - END 230102*/
+
+.address-close-span img{
+ width:10%;cursor:pointer;text-align:right;
+}
+

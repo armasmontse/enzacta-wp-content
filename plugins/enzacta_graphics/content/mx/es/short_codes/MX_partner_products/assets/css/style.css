@@ -1,0 +1,912 @@
+/* Fonts */
+
+@font-face{
+	font-family: 'Georgia';
+	src: url('fonts/Georgia-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: sans-serif;
+}
+
+/* Main Colors variables */
+:root {
+	--primary-color: #299973;
+	--red-color-product: rgb(180, 46, 40);
+	--grey-color-product:  rgb(89, 106, 123);
+	--orange-color-product: rgb(243, 182, 39);
+	--green-color-product: rgb(64, 139, 129);
+	--aqua-color-product: rgb(84, 118, 90);
+	--brown-color-product: rgb(196, 169, 101);
+}
+
+/* Init CSS base */
+
+a:link, a:visited, a:hover, a:focus, a:active
+{
+	color:none;
+	text-decoration: none;
+	display:inline-block;
+}
+
+p, a, li, h2, h1
+{
+	word-break: keep-all;
+}
+
+table
+{
+	border: none;
+	border-top: none !important;
+	border-left: none !important;
+	border-collapse: collapse;
+}
+
+tr, td
+{
+	padding: 0px;
+}
+
+html {
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--secondary-color);
+}
+
+/*PARTNER PRODUCTS PAGE STYLES*/
+.WP-parnerproducts-header-container
+{
+	width: 100%;
+	position: relative;
+	min-height: 200px;
+	overflow: hidden;
+}	
+
+.WP-parnerproducts-header-backimage
+{
+	position: absolute;
+	object-fit: cover;
+	width: 300%;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: -1;
+}
+
+.WP-parnerproducts-header-image
+{
+	width: 100%;
+	max-width: 800px;
+	display: block;
+	margin: auto;
+}
+
+.WP-parnerproducts-head-title {
+    font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+    color: rgb(90, 90, 90);
+    font-weight: 400;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    line-height: 30px;
+}
+
+.WP-parnerproducts-separator {
+    width: 40px;
+    height: 5px;
+    background-color: var(--primary-color);
+    margin: auto;
+}
+
+.WP-parnerproducts-header-text
+{
+	width: calc(100% - 40px);
+	padding: 20px;
+	margin: auto;
+}
+
+/* ==================== +++ MAG +++ WENZ-1574 +++ 260804 +++ ==================== */
+/* ----- Start ----- */
+
+.WP-parnerproducts-video-link-wrapper {
+	text-align: center;
+	margin: 60px auto 0;
+}
+
+.WP-parnerproducts-video-link {
+	padding: 12px 24px;
+	border-radius: 999px;
+	background: #176b4f;
+	color: #FFF;
+	font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+	font-weight: 700;
+	cursor: pointer;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	display: inline-block;
+	font-size: 16px;
+}
+
+#pp__intro-video {
+    font-size: 20px;
+	color: rgb(90, 90, 90);
+}
+
+.WP-parnerproducts-video-link:hover,
+.WP-parnerproducts-video-link:focus {
+	color: #fff;
+	outline-offset: 3px;
+}
+.WP-parnerproducts-video-link:hover {
+	transform: scale(1.01);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pp__hero--container-bg {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    max-width: none;
+    transform: translateX(-50%);
+    overflow: hidden;
+}
+
+.PP-video-modal {
+	position: fixed;
+	inset: 0;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding: 20px;
+	background: transparent;
+	z-index: 9999;
+	overflow: auto;
+	box-sizing: border-box;
+}
+
+.PP-video-modal[hidden] {
+	display: none;
+}
+
+.PP-video-modal-backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(0, 0, 0, .65);
+}
+
+.PP-video-modal-content {
+	position: relative;
+	z-index: 1;
+	width: min(950px, 100%);
+	max-width: 100%;
+	margin: auto;
+	flex: 0 0 auto;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 18px 45px rgba(0, 0, 0, .22);
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.PP-video-modal-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 15px;
+	background: #f8f8f8;
+}
+
+.PP-video-modal-header h2 {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+	color: #222;
+}
+
+.PP-video-modal-close {
+	border: none;
+	background: transparent;
+	font-size: 1rem;
+	line-height: 1;
+	color: #FFF;
+	cursor: pointer;
+	padding: 0;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-weight: bold;
+}
+
+.PP-video-modal-close:hover,
+.PP-video-modal-close:focus {
+	color: #FFF;
+	outline-offset: 3px;
+}
+
+.PP-video-modal-body {
+	padding: 0 15px 15px;
+}
+
+.PP-video-wrapper {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+}
+
+.PP-video-wrapper iframe {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+@media (max-width: 680px) {
+	.PP-video-modal-content {
+		width: 100%;
+		margin: auto;
+	}
+
+	.PP-video-modal-header {
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+}
+
+/* ----- End ----- */
+/* ==================== +++ MAG +++ WENZ-1574 +++ 260804 +++ ==================== */
+
+.WP-parnerproducts-product-container
+{
+	width: calc(100% - 40px);
+	max-width: 1000px;
+	padding: 20px;
+	margin: auto;
+	align-items: center;
+}
+
+.WP-parnerproducts-product-image
+{
+	width: 70%;
+	display: block;
+	margin: auto;
+}
+
+.extra-sp {
+	margin-top: 20px;
+}
+
+.WP-parnerproducts-acordion-button p.WP-parnerproducts-product-text.WP-normal-text {
+    margin-top: 20px;
+}
+
+.WP-parnerproducts-product-title
+{
+	font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+    color: rgb(90, 90, 90);
+    font-weight: 700;
+    text-align: left;
+}
+
+.WP-parnerproducts-product-text, .WP-parnerproducts-product-list li
+{
+	font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+    color: rgb(90, 90, 90);
+    font-weight: 400;
+    text-align: left;
+    line-height: 30px;
+}
+
+.WP-parnerproducts-product-section
+{
+	width: calc(100% - 40px);
+	padding: 0px 20px 20px 20px;
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+.WP-no-position-text
+{
+	margin-top: -20px;
+	font-weight: 700;
+	background-color: white;
+	max-width: fit-content;
+	padding: 10px;
+}
+
+h2.WP-parnerproducts-head-title.WP-normal-text.margintop20 {
+    line-height: normal;
+}
+
+.WP-numbered-list
+{
+	list-style-type: decimal;
+}
+
+.WP-parnerproducts-acordion-button {
+    width: calc(100% - 40px);
+    border: 1px solid #404041;
+    border-radius: 10px;
+    color: #404041;
+    padding: 0px 20px;
+    cursor: pointer;
+    font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+}
+
+.WP-parnerproducts-acordion-button-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.WP-parnerproducts-acordion-description
+{
+    width: calc(100% - 40px);
+    color: #404041;
+    padding: 0px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif !important;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease-out;
+}
+
+.fda-statement {
+    padding: 15px 20px 15px 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 14px!important;
+}
+
+.WP-lemon-product {
+	color: #c5d345;
+	border-color: #c5d345;
+}
+
+.WP-blue-product {
+	color: #21a1d8;
+	border-color: #21a1d8;
+}
+
+.WP-red-product
+{
+	color: var(--red-color-product);
+	border-color: var(--red-color-product);
+}
+
+.WP-grey-product
+{
+	color: var(--grey-color-product);
+	border-color: var(--grey-color-product);
+}
+
+.WP-orange-product
+{
+	color: var(--orange-color-product);
+	border-color: var(--orange-color-product);
+}
+
+.WP-green-product
+{
+	color: var(--green-color-product);
+	border-color: var(--green-color-product);
+}
+
+.WP-aqua-product
+{
+	color: var(--aqua-color-product);
+	border-color: var(--aqua-color-product);
+}
+
+.WP-brown-product
+{
+	color: var(--brown-color-product);
+	border-color: var(--brown-color-product);
+}
+
+.spacer {
+	height: 50px;
+}
+
+
+/*RESPONSIVE STYLES*/
+
+.flexme
+{
+	display: flex;
+}
+
+.containerflexwrap
+{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.block01 {flex: 8.333%;}
+.block02 {flex: 16.666%;}
+.block03 {flex: 25%;}
+.block04 {flex: 33.333%;}
+.block05 {flex: 41.666%;}
+.block06 {flex: 50%;}
+.block07 {flex: 58.333%;}
+.block08 {flex: 66.666%;}
+.block09 {flex: 75%;}
+.block10 {flex: 83.333%;}
+.block11 {flex: 91.666%;}
+.block12 {flex: 100%;}
+.blockauto {flex: 1 1 auto;}
+
+
+@media (max-width: 767px)
+{
+  .block01, .block02, .block03, .block04, .block05, .block06, .block07, .block08, .block09, .block10, .block11, .block12, .blockauto
+  {
+  	flex: 100%;
+  }
+}
+
+/* MEDIA FOR SPECIAL CASES */
+@media only screen and (min-width: 0px)
+{
+  	.visibledesk{display: none;}
+  	.visibledevice{display: initial}
+
+  	.WP-parnerproducts-header-backimage
+	{
+		width: 500%;
+		left: 50%;
+		transform: translate(-50%,0);
+		z-index: -1;
+	}
+  	
+}
+
+
+
+@media only screen and (min-width: 768px)
+{
+		
+  	.visibledesk{display: initial}
+  	.visibledevice{display: none;}
+
+  	.WP-parnerproducts-header-backimage
+	{
+		width: 500%;
+		left: 50%;
+		transform: translate(-50%,0);
+		z-index: -1;
+	}
+}
+
+
+
+.margintop5
+{
+	margin-top: 5px;
+}
+.margintop10
+{
+	margin-top: 10px;
+}
+.margintop20
+{
+	margin-top: 20px;
+}
+.margintop40
+{
+	margin-top: 40px;
+}
+.margintop50
+{
+	margin-top: 50px;
+}
+.margintop60
+{
+	margin-top: 60px;
+}
+.margintop80
+{
+	margin-top: 80px;
+}
+.margintop100
+{
+	margin-top: 100px;
+}
+.marginbottom0
+{
+	margin-bottom: 0px;
+}
+.marginbottom20
+{
+	margin-bottom: 20px;
+}
+.marginbottom40
+{
+	margin-bottom: 40px;
+}
+.marginbottom60
+{
+	margin-bottom: 60px;
+}
+.marginbottom80
+{
+	margin-bottom: 80px;
+}
+.marginbottom100
+{
+	margin-bottom: 100px;
+}
+.paddingbottom0
+{
+	padding-bottom: 0px;
+}
+.paddingbottom60
+{
+	padding-bottom: 60px;
+}
+.paddingbottom100
+{
+	padding-bottom: 100px;
+}
+.paddingtop60
+{
+	padding-top: 60px;
+}
+.paddingtop100
+{
+	padding-top: 100px;
+}
+
+.centerme
+{
+	margin: auto;
+}
+
+/* FONT SIZE */
+
+.WP-button-text
+{
+	font-size: 16px;
+}
+
+.WP-normal-text
+{
+	font-size: 18px;
+}
+
+.WP-title-text
+{
+	font-size: 22px;
+}
+
+.WP-subtitle-text
+{
+	font-size: 20px;
+}
+/* WENZ-1023 ---- RRM ---- styles to overrule template afectations ---- START ---- START ---- START */
+.page-title.header {
+    display: none;
+}
+img.WP-parnerproducts-header-image {
+    width: 867px;
+    height: auto;
+}
+.main-content-inner, .main-inner-container, .main-content.box-page {
+    width: unset;
+}
+img.WP-parnerproducts-header-backimage {
+    width: 160%;
+    max-width: unset;
+}
+/* p.WP-parnerproducts-product-text {
+    margin-top: 20px;
+} */
+p.WP-products-description-text.WP-normal-text {
+    margin-top: 20px;
+}
+.WP-parnerproducts-acordion-button-icon {
+    margin-top: unset;
+}
+@media only screen and (max-width: 1449px) {
+.WP-parnerproducts-header-container {
+    position: unset;
+}
+img.WP-parnerproducts-header-backimage {
+    height: 20vw;
+}
+img.WP-parnerproducts-header-image {
+    width: 58vw;
+}
+}
+@media only screen and (max-width: 951px) {
+img.WP-parnerproducts-header-backimage {
+    height: 22vw;
+}
+img.WP-parnerproducts-header-image {
+    width: 70vw;
+}
+}
+@media only screen and (max-width: 767px) {
+img.WP-parnerproducts-header-backimage {
+    height: 32vw;
+}
+img.WP-parnerproducts-header-image {
+    width: 86vw;
+}	
+.WP-parnerproducts-header-container {
+    min-height: unset;
+}
+}
+/* WENZ-1023 ---- RRM ---- styles to overrule template afectations ---- END ---- END ---- END */
+
+/* ==================== +++ MAG +++ WENZ-1515 +++ 260616 +++ ==================== */
+/* ----- Start ----- */
+
+.WP-green_enz-product {
+	color: #299973;
+    border-color: #299973;
+}
+
+.pp__hero--container {
+    overflow: hidden;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: none;
+}
+
+.pp__hero--bg {
+	width: 100%;
+	height: 350px;
+	background: linear-gradient(to bottom, #ff8f44 0%, #f06b30 50%, #e04f22 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.pp__hero--image {
+	max-width: 700px !important;
+	width: 100%;
+	margin-top: -20px;
+}
+
+@media only screen and (max-width: 767px) {
+	.pp__hero--bg {
+		height: 33vh;
+		max-height: 300px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.pp__hero--image {
+		transform: scale(1.3);
+	}
+	.WP-parnerproducts-head-title {
+		font-size: 17px !important;
+	}
+}
+
+@media (max-height: 900px) {
+	.pp__hero--image {
+		margin-top: -40px;
+	}
+}
+
+#pp__intro {
+	line-height: normal;
+	font-size: 18px !important;
+	transform: scale(1) !important;
+}
+
+/* ------ End ------ */
+/* ==================== +++ MAG +++ WENZ-1515 +++ 260616 +++ ==================== */
+
+
+/* ==================== +++ MAG +++ WENZ-1574 +++ 260804 +++ ==================== */
+/* ----- Start ----- */
+
+.pp-hero {
+	position: relative;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+	flex-direction: column;
+	isolation: isolate;
+	background: linear-gradient(
+	120deg,
+	#ff004c,
+	#ff8a00,
+	#fff200,
+	#00d087,
+	#0062ff,
+	#3b5bff,
+	#a100ff,
+	#ff004c
+	);
+	background-size: 400% 400%;
+	animation: rainbowFlow 18s ease-in-out infinite;
+}
+
+.pp-gradient-bg {
+	position: absolute;
+	inset: -30%;
+	z-index: 0;
+	filter: blur(90px) saturate(1.4);
+	transform: scale(1.1);
+	animation: hueShift 24s linear infinite;
+}
+
+.pp-gradient-bg::before,
+.pp-gradient-bg::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background:
+		radial-gradient(circle at 15% 25%, #ff005d 0 12%, transparent 34%),
+		radial-gradient(circle at 40% 20%, #ff9d00 0 14%, transparent 36%),
+		radial-gradient(circle at 70% 25%, #fff000 0 13%, transparent 35%),
+		radial-gradient(circle at 85% 60%, #00eaff 0 16%, transparent 38%),
+		radial-gradient(circle at 55% 80%, #004cff 0 15%, transparent 38%),
+		radial-gradient(circle at 25% 75%, #00ff85 0 14%, transparent 36%),
+		radial-gradient(circle at 50% 50%, #b000ff 0 18%, transparent 42%);
+	background-size: 160% 160%;
+	mix-blend-mode: screen;
+	opacity: 0.95;
+}
+
+.pp-gradient-bg::before {
+	animation: liquidMoveA 26s ease-in-out infinite alternate;
+}
+
+.pp-gradient-bg::after {
+	opacity: 0.75;
+	filter: blur(50px);
+	transform: rotate(25deg) scale(1.2);
+	animation: liquidMoveB 34s ease-in-out infinite alternate;
+}
+
+.blob {
+	display: none;
+}
+
+.pp-logo {
+	position: relative;
+	z-index: 2;
+	width: min(72vw, 570px);
+	height: auto;
+	mix-blend-mode: overlay;
+	opacity: 0.95;
+	pointer-events: none;
+	filter: drop-shadow(0 0 6px rgba(0,0,0,.8));
+}
+
+.pp-byenzacta-tag {
+	top: 10px;
+    filter: drop-shadow(0 0 6px rgba(0, 0, 0, .8));
+    mix-blend-mode: overlay;
+    opacity: 0.95;
+    pointer-events: none;
+}
+
+.pp-byenzacta-tag {
+	position: relative;
+	z-index: 2;
+	width: min(72vw, 140px);
+	height: auto;
+	pointer-events: none;
+}
+
+@keyframes rainbowFlow {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes liquidMoveA {
+	0% {
+		transform: translate3d(-6%, -4%, 0) rotate(0deg) scale(1);
+		background-position: 0% 50%;
+	}
+
+	50% {
+		transform: translate3d(6%, 5%, 0) rotate(18deg) scale(1.18);
+		background-position: 100% 40%;
+	}
+
+	100% {
+		transform: translate3d(-3%, 7%, 0) rotate(-12deg) scale(1.08);
+		background-position: 40% 100%;
+	}
+}
+
+@keyframes liquidMoveB {
+	0% {
+		transform: translate3d(5%, 6%, 0) rotate(25deg) scale(1.15);
+		background-position: 100% 0%;
+	}
+
+	50% {
+		transform: translate3d(-7%, -5%, 0) rotate(-10deg) scale(1.35);
+		background-position: 20% 80%;
+	}
+
+	100% {
+		transform: translate3d(8%, -2%, 0) rotate(35deg) scale(1.2);
+		background-position: 80% 30%;
+	}
+}
+
+@keyframes hueShift {
+	0% {
+		filter: blur(90px) saturate(1.4) hue-rotate(0deg);
+	}
+
+	100% {
+		filter: blur(90px) saturate(1.4) hue-rotate(360deg);
+	}
+}
+
+@media (max-width: 768px) {
+	.pp-hero {
+		height: 420px;
+	}
+
+	.pp-logo {
+		width: 69vw;
+	}
+
+	.pp-gradient-bg {
+		inset: -45%;
+		filter: blur(70px) saturate(1.4);
+	}
+
+	@keyframes hueShift {
+		0% {
+		filter: blur(70px) saturate(1.4) hue-rotate(0deg);
+		}
+
+		100% {
+		filter: blur(70px) saturate(1.4) hue-rotate(360deg);
+		}
+	}
+
+	.pp__hero--container-bg {
+		height: 33vh;
+		max-height: 300px;
+		display: flex;
+		align-items: center;
+	}
+	
+}
+
+@media (max-width: 480px) {
+	.pp-logo {
+		width: 80vw;
+	}
+}
+
+/* ------ End ------ */
+/* ==================== +++ MAG +++ WENZ-1574 +++ 260804 +++ ==================== */
