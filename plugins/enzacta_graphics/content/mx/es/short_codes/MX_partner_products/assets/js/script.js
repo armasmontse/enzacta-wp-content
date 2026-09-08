@@ -41,7 +41,7 @@ document.querySelectorAll('.WP-parnerproducts-acordion-container').forEach(funct
     var closeBtn = modal && modal.querySelector('.PP-video-modal-close');
     var backdrop = modal && modal.querySelector('[data-modal-close="true"]');
     var iframe = document.getElementById('pp-video-iframe');
-    var videoSrc = 'https://www.youtube.com/embed/wX8Q49kJObE?rel=0&playsinline=1';
+    var videoSrc = 'https://www.youtube.com/embed/OdWsoDbRDD4?rel=0&playsinline=1';
     var lastFocused = null;
     var previousBodyOverflow = '';
 

@@ -60,7 +60,7 @@
 	<!-- ProBio360 Card Product -->
 	<div class="WP-parnerproducts-product-container containerflexwrap">
 		<div class="block05">
-			<img class="WP-parnerproducts-product-image" src="<?php echo IMAGE_SERVER_BASE_PATH;?>/sites/mx/partner_products/ProBio360_260608.jpg">
+			<img class="WP-parnerproducts-product-image" src="<?php echo IMAGE_SERVER_BASE_PATH;?>/sites/mx/partner_products/ProBio360_260908.jpg">
 		</div>
 		<div class="block05">
 			<h2 class="WP-parnerproducts-product-title WP-subtitle-text">ProBio360</h2>
