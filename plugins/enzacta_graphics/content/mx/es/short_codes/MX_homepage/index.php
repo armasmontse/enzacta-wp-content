@@ -17,10 +17,10 @@ wp_localize_script('content-js', 'graphics_obj', array(
 <!-- This is the area for HTML .Styles we can write on the above styles.css or common tempalte CSS file and scripts we can write on above files-->
 
 <!-- end of the area for HTML -->
-<?php
+<?php 
 $SERVER_NAME = explode(".",$_SERVER["SERVER_NAME"]);
 
-if($SERVER_NAME[0]=="wwwmx"){
+if($SERVER_NAME[0]=="wwwmx"){ 
   require_once("sliderCOUNTRY-MX.php"); //country store
 }else{
   require_once("sliderIBO-MX.php"); //IBO store
@@ -151,12 +151,12 @@ if($SERVER_NAME[0]=="wwwmx"){
   </div>
 </div>
 
-	<div class="WP-home-promotion-container  margintop20">
-		<a href="<?php echo esc_url(DOMAIN_SUB_SITE . '/mx/mx-partner-products'); ?>">
-			<img class="WP-home-partner-products only-desktop" src="<?php echo IMAGE_SERVER_BASE_PATH;?>/sites/mx/partner_products/Banner_PP_deskt_260908.jpg" alt="Banner Partner Products | ENZACTA">
-			<img class="WP-home-partner-products only-mobile" src="<?php echo IMAGE_SERVER_BASE_PATH;?>/sites/mx/partner_products/Banner_PP_mob_260908.jpg" alt="Banner Partner Products | ENZACTA">
-		</a>
-	</div>
+<div class="WP-home-promotion-container  margintop20">
+	<a href="<?php echo esc_url(DOMAIN_SUB_SITE . '/mx/mx-partner-products'); ?>">
+	<img class="WP-home-partner-products only-desktop" src="<?php echo IMAGE_SERVER_BASE_PATH;?>/sites/mx/partner_products/Banner_PP_deskt_260908.jpg" alt="Banner Partner Products | ENZACTA">
+	<img class="WP-home-partner-products only-mobile" src="<?php echo IMAGE_SERVER_BASE_PATH;?>/sites/mx/partner_products/Banner_PP_mob_260908.jpg" alt="Banner Partner Products | ENZACTA">
+	</a>
+</div>
 
 <div class="WP-home-guarantee-container margintop20 marginbottom40">
   <div class="WP-home-guarantee-innercontainer containerflexwrap">
