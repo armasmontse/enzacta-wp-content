@@ -61,7 +61,9 @@ add_shortcode('Certificado_AMVD',      'loadGraphicsContent');
 // --- MKT Entrepreneur ---
 add_shortcode('entrepreneur',      'loadGraphicsContent');
 
-// --- MKT KO ---
-// --- Product page ---
+// --- MKT KO Products Pages ---
+// alfa_pxp_forte | KO/EN
 add_shortcode('alfa-pxp-forte',      'loadGraphicsContent');
+// alfa_zeta_probiotics | KO/EN
+add_shortcode('ko_alfa_zeta_probiotics', 'loadGraphicsContent');
 ?>
