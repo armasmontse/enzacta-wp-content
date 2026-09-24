@@ -40,7 +40,7 @@
 		<div class="hero__flex">
 
 			<div class="hero__nav-btn--mobile">
-				<p class="hero__nav-btn hero__nav-btn--info">MORE INFO ></p>
+				<p class="hero__nav-btn hero__nav-btn--info">TESTIMONIES ></p>
 				<p class="hero__nav-btn hero__nav-btn--faq">FAQ ></p>
 			</div>
 
@@ -50,14 +50,16 @@
 			<div class="block05 hero__col--right">
 				<div class="hero__content">
 					<div class="hero__nav">
-						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--info">MORE INFO ></p>
+						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--info">TESTIMONIES ></p>
 						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--faq">FAQ ></p>
+						<a class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--buy" href="">BUY NOW</a>
 					</div>
 					<div class="hero__text">
-						<p class="hero__category">WELLBEING</p>
+						<p class="hero__category">VITALITY</p>
 						<div class="hero__separator"></div>
-						<h2 class="hero__subtitle">alfa</h2>
-						<h1 class="hero__title">ZETA PROBIOTICS</h1>
+						<h1 class="hero__title">
+							<span class="hero__title-brand">alfa</span> <span class="hero__title-product">ZETA <br>PROBIOTICS</span>
+						</h1>
 						<p class="hero__description">
 							Support everyday gut wellness with alfa ZETA PROBIOTICS, a refreshing peach-flavored 7+5+1 triple-biotic formula with 10 billion CFU, seven Probiotics, five prebiotics, one postbiotic, and patented ZetaBio® technology, all in a convenient stick designed to mix easily with water.
 						</p>
@@ -66,7 +68,7 @@
 								DESCRIPTION
 							</div>
 							<div class="hero__cta hero__cta--facts">
-								FACTS
+								SUPPLEMENT FACTS
 							</div>
 						</div>
 					</div>
@@ -80,7 +82,7 @@
 	<div class="icons">
 		<div class="icons__header">
 			<h4 class="icons__title">
-				Made complete <span class="icons__title-emphasis">Through Design</span>, not ingredients alone.
+				Made complete <span class="icons__title-emphasis">Through Design,</span> not ingredients alone.
 			</h4>
 			<div class="icons__separator"></div>
 		</div>
@@ -151,29 +153,32 @@
 
 			<div class="info__cards--box">
 				<div class="info__card--red">
-					<div class="info__card--title">
-						7 PROBIOTICS
-					</div>
+					<h3 class="info__card--title">
+						<span class="info__card--number">7</span>
+						<span class="info__card--label">PROBIOTICS</span>
+					</h3>
 					<div class="info--separator"></div>
 					<div class="info__card--content">
-						7 Danisco probiotic strains<br>
+						7 Danisco probiotic strains<br><br>
 						10 billion CFU
 					</div>
 				</div>
 
 				<div class="info__card--green">
-					<div class="info__card--title">
-						5 PREBIOTICS
-					</div>
+					<h3 class="info__card--title">
+						<span class="info__card--number">5</span>
+						<span class="info__card--label">PREBIOTICS</span>
+					</h3>
 					<div class="info--separator"></div>
 					<div class="info__card--content">
 						5 prebiotic sources that nourish beneficial gut bacteria
 					</div>
 				</div>
 				<div class="info__card--orange">
-					<div class="info__card--title">
-						1 POSTBIOTIC
-					</div>
+					<h3 class="info__card--title">
+						<span class="info__card--number">1</span>
+						<span class="info__card--label">POSTBIOTIC</span>
+					</h3>
 					<div class="info--separator"></div>
 					<div class="info__card--content">
 						Made from inactivated probiotic cells
@@ -188,14 +193,122 @@
 	<!-- ========== HEALTH ========== -->
 
 	<div class="health">
-		<div class="health__header">
-			<h4 class="health__title">
-				A <span class="health__title--bold">unique</span> and functional blend of brown rice!
-			</h4>
-			<div class="health__separator"></div>
-		</div>
-
 		<div class="health__container">
+			<div class="health__card health__card--overview">
+				<div class="health__intro">
+					<div class="health__header">
+						<h2 class="health__title">
+							<span class="health__title--bold">7 Probiotic Strains from IFF-Danisco</span>
+						</h2>
+						<div class="health__separator"></div>
+					</div>
+					<p class="health__description">A strain composition designed with the gut environment in mind. Backed by more than 100 years of research and technical expertise, carefully selected strains are supplied as stable, reliable ingredients.</p>
+				</div>
+
+				<div class="health__strain-layout">
+					<div class="health__strain-diagram">
+						<img
+							class="health__digestive-composition"
+							src="<?= plugins_url('assets/img/health/health_digestive_strains_en.png', __FILE__) ?>"
+							alt="Digestive system showing the seven probiotic strains"
+						>
+					</div>
+
+					<div class="health__features">
+						<h3 class="health__subtitle">Features of the 7 Danisco Probiotic Strains</h3>
+						<ul class="health__feature-list">
+							<li class="health__feature">
+								<h4 class="health__feature-title">Diverse strain composition</h4>
+								<p class="health__feature-text">Multiple strains are combined with the diverse environments of the gut in mind.</p>
+							</li>
+							<li class="health__feature">
+								<h4 class="health__feature-title">Combination based on strain characteristics</h4>
+								<p class="health__feature-text">The distinct characteristics of the different strains were considered together.</p>
+							</li>
+							<li class="health__feature">
+								<h4 class="health__feature-title">Designed with the gut environment in mind</h4>
+								<p class="health__feature-text">The blend was formulated to create a balanced composition.</p>
+							</li>
+							<li class="health__feature">
+								<h4 class="health__feature-title">Strains with FDA-Recognized GRAS Status</h4>
+								<p class="health__feature-text">Recognized as safe under intended conditions of use within the FDA's GRAS framework.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="health__divider"></div>
+
+				<div class="health__biotic-grid">
+					<div class="health__biotic health__biotic--pre">
+						<h3 class="health__subtitle">5 Prebiotic Ingredients</h3>
+						<p class="health__description">They serve as food for probiotics, helping support the growth of beneficial gut bacteria and regular bowel movements.</p>
+						<h4 class="health__detail-title">The Five Prebiotics</h4>
+						<ul class="health__prebiotic-list">
+							<li>Fructooligosaccharides (Primary Ingredient)</li>
+							<li>Galactooligosaccharides (Supporting Ingredient)</li>
+							<li>Inulin (Supporting Ingredient)</li>
+							<li>Resistant Maltodextrin (Supporting Ingredient)</li>
+							<li>Xylooligosaccharides (Supporting Ingredient)</li>
+						</ul>
+					</div>
+
+					<div class="health__biotic health__biotic--post">
+						<h3 class="health__subtitle">1 Postbiotic Ingredient</h3>
+						<p class="health__description">The final piece that completes the formula</p>
+						<h4 class="health__detail-title">What Are Postbiotics?</h4>
+						<p class="health__detail-text">Postbiotics are made from inactivated beneficial bacteria and the components derived from them, rather than from live microorganisms. These ingredients are increasingly being studied for their role in the gut environment. alfa ZETA PROBIOTICS includes inactivated probiotic cells to complete its pro, pre, and postbiotic triple formula.</p>
+						<div class="health__disclaimer">
+							<p>* This is a supporting ingredient, and the description above provides general information about the ingredient category.</p>
+							<p>* It does not imply any individual product benefit or efficacy.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="health__technology-grid">
+				<div class="health__card health__card--freeze">
+					<h3 class="health__subtitle">If You Simply Pour Probiotics into Your Mouth, Will They All Survive?</h3>
+					<p class="health__description">Freeze-drying is effective at improving probiotic survival, but surface damage can occur during the drying process.</p>
+					<div class="health__comparison health__comparison--arrow">
+						<div class="health__comparison-item">
+							<img class="health__comparison-img" src="<?= plugins_url('assets/img/info/info_bacteria_green.png', __FILE__) ?>" alt="" aria-hidden="true">
+							<p class="health__comparison-label">LIVE<br>PROBIOTICS</p>
+						</div>
+						<span class="health__direction" aria-hidden="true"></span>
+						<div class="health__comparison-item">
+							<img class="health__comparison-img" src="<?= plugins_url('assets/img/info/info_bacteria_blue.png', __FILE__) ?>" alt="" aria-hidden="true">
+							<p class="health__comparison-label">FREEZE-DRIED<br>PROBIOTICS</p>
+						</div>
+					</div>
+					<div class="health__detail">
+						<h4 class="health__detail-title">What Are Freeze-Dried Probiotics?</h4>
+						<p class="health__detail-text">Freeze-drying and powdering technology is used to extend the shelf life of probiotics and make distribution more convenient. However, ice crystals can form during the drying process and may damage probiotic cell membranes.</p>
+					</div>
+				</div>
+
+				<div class="health__card health__card--zetabio">
+					<h3 class="health__subtitle">ZetaBio® Technology Applied</h3>
+					<p class="health__description">alfa ZETA PROBIOTICS features patented ZetaBio® Technology.</p>
+					<div class="health__comparison health__comparison--versus">
+						<div class="health__comparison-item">
+							<p class="health__comparison-label">Freeze-Dried Probiotics after contact with water</p>
+							<img class="health__comparison-img" src="<?= plugins_url('assets/img/info/info_bacteria_cyan.png', __FILE__) ?>" alt="" aria-hidden="true">
+							<p class="health__comparison-caption">During freeze-drying, the electrical properties, or charge, of the cell membrane may change.</p>
+						</div>
+						<span class="health__vs" aria-hidden="true">VS</span>
+						<div class="health__comparison-item">
+							<p class="health__comparison-label">alfa Zeta Probiotics after contact with water</p>
+							<img class="health__comparison-img" src="<?= plugins_url('assets/img/info/info_bacteria_coral.png', __FILE__) ?>" alt="" aria-hidden="true">
+							<p class="health__comparison-caption">With ZetaBio Technology, freeze-dried probiotics are reactivated and regain the same electrical charge as live probiotics.</p>
+						</div>
+					</div>
+					<div class="health__detail">
+						<h4 class="health__detail-title">ZetaBio Technology Activates Probiotics with Water</h4>
+						<p class="health__detail-text">ZetaBio Technology reactivates freeze-dried probiotics when mixed with water, helping restore properties similar to live probiotics, including strong survival and intestinal-adhesion capabilities.</p>
+					</div>
+				</div>
+			</div>
 
 		</div>
 	</div>
@@ -218,7 +331,7 @@
 					<div class="instructions__separator"></div>
 
 					<div class="instructions__text">
-						Refreshing peach flavor turns your daily probiotic routine <span class="instructions__bold">into a moment to enjoy</span>.
+						Refreshing peach flavor turns your daily probiotic routine into <span class="instructions__bold">a moment to enjoy.</span>
 					</div>
 					<div class="instructions__box">
 

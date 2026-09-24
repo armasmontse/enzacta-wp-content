@@ -142,28 +142,28 @@ document.querySelectorAll('.faq__item').forEach(function(element) {
 
 document.querySelectorAll('.hero__nav-btn--info').forEach(function(button) {
     button.addEventListener('click', function() {
-        const section = document.querySelector('.js-section--carousel');
-        const offset = section.getBoundingClientRect().top + window.scrollY - 110;
-        window.scrollTo({ top: offset, behavior: 'smooth' });
+        const target = document.querySelector('.js-section--carousel');
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - 110;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
     });
 });
 
 document.querySelectorAll('.hero__nav-btn--faq').forEach(function(button) {
     button.addEventListener('click', function() {
-        const section = document.querySelector('.js-section--faq');
-        const offset = section.getBoundingClientRect().top + window.scrollY - 110;
-        window.scrollTo({ top: offset, behavior: 'smooth' });
+        const target = document.querySelector('.js-section--faq');
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY - 110;
+        window.scrollTo({ top: targetPosition, behavior: 'smooth' });
     });
 });
 
 document.querySelector('.hero__cta--description').addEventListener('click', function() {
-    const destino = document.querySelector('.js-section--description');
-    const offset = destino.getBoundingClientRect().top + window.scrollY - 110;
-    window.scrollTo({ top: offset, behavior: 'smooth' });
+    const target = document.querySelector('.info');
+    const targetPosition = target.getBoundingClientRect().top + window.scrollY - 110;
+    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
 });
 
 document.querySelector('.hero__cta--facts').addEventListener('click', function() {
-    const destino = document.querySelector('.js-section--facts');
-    const offset = destino.getBoundingClientRect().top + window.scrollY - 110;
-    window.scrollTo({ top: offset, behavior: 'smooth' });
+    const target = document.querySelector('.facts');
+    const targetPosition = target.getBoundingClientRect().top + window.scrollY - 110;
+    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
 });

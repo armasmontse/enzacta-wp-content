@@ -40,7 +40,7 @@
 		<div class="hero__flex">
 
 			<div class="hero__nav-btn--mobile">
-				<p class="hero__nav-btn hero__nav-btn--info">MORE INFO ></p>
+				<p class="hero__nav-btn hero__nav-btn--info">TESTIMONIES ></p>
 				<p class="hero__nav-btn hero__nav-btn--faq">FAQ ></p>
 			</div>
 
@@ -50,23 +50,25 @@
 			<div class="block05 hero__col--right">
 				<div class="hero__content">
 					<div class="hero__nav">
-						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--info">MORE INFO ></p>
+						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--info">TESTIMONIES ></p>
 						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--faq">FAQ ></p>
+						<a class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--buy" href="">BUY NOW</a>
 					</div>
 					<div class="hero__text">
-						<p class="hero__category">웰빙</p>
+						<p class="hero__category">활력</p>
 						<div class="hero__separator"></div>
-						<h2 class="hero__subtitle">알파</h2>
-						<h1 class="hero__title">제타 프로바이오틱스</h1>
+						<h1 class="hero__title">
+							<span class="hero__title-brand">알파</span> <span class="hero__title-product">제타 <br> 프로바이오틱스</span>
+						</h1>
 						<p class="hero__description">
 							상큼한 복숭아 맛의 알파 제타 프로바이오틱스와 함께 매일의 장 건강을 챙기세요. 3중 바이오틱스 7.5.1 설계로 완성했습니다. 특허받은 제타바이오® 기술이 동결건조된 유산균을 생균과 유사한 생존율 및 장내 부착 능력을 갖도록 합니다. 물에 타서 섭취하는 워터믹스 제형으로 남녀노소 누구나 맛있게 즐기실 수 있습니다.
 						</p>
 						<div class="flexme">
 							<div class="hero__cta hero__cta--description">
-								상세정보
+								DESCRIPTION
 							</div>
 							<div class="hero__cta hero__cta--facts">
-								제품정보
+								SUPPLEMENT FACTS
 							</div>
 						</div>
 					</div>
@@ -151,29 +153,32 @@
 
 			<div class="info__cards--box">
 				<div class="info__card--red">
-					<div class="info__card--title">
-						7종 프로바이오틱스
-					</div>
+					<h3 class="info__card--title">
+						<span class="info__card--number">7</span>
+						<span class="info__card--label">프로바이오틱스</span>
+					</h3>
 					<div class="info--separator"></div>
 					<div class="info__card--content">
-						Danisco사 7종 유산균<br>
+						Danisco사 7종 유산균<br><br>
 						100억 CFU 함유
 					</div>
 				</div>
 
 				<div class="info__card--green">
-					<div class="info__card--title">
-						5종 프리바이오틱스
-					</div>
+					<h3 class="info__card--title">
+						<span class="info__card--number">5</span>
+						<span class="info__card--label">프리바이오틱스</span>
+					</h3>
 					<div class="info--separator"></div>
 					<div class="info__card--content">
 						유익균을 위한 다양한 먹이 5종
 					</div>
 				</div>
 				<div class="info__card--orange">
-					<div class="info__card--title">
-						1종 포스트바이오틱스
-					</div>
+					<h3 class="info__card--title">
+						<span class="info__card--number">1</span>
+						<span class="info__card--label">포스트바이오틱스</span>
+					</h3>
 					<div class="info--separator"></div>
 					<div class="info__card--content">
 						유산균 사균체
@@ -188,14 +193,122 @@
 	<!-- ========== HEALTH ========== -->
 
 	<div class="health">
-		<div class="health__header">
-			<h4 class="health__title">
-				엔잭타에서만 만날 수 있는 특별한 <span class="health__title--bold">쌀추출물</span>!
-			</h4>
-			<div class="health__separator"></div>
-		</div>
-
 		<div class="health__container">
+			<div class="health__card health__card--overview">
+				<div class="health__intro">
+					<div class="health__header">
+						<h2 class="health__title">
+							<span class="health__title--bold">7종의 프로바이오틱스</span>
+						</h2>
+						<div class="health__separator"></div>
+					</div>
+					<p class="health__description">장내 환경을 고려하여 설계된 균주 배합입니다. 세계적인 유산균 기업인 IFF-다니스코사의 100년 이상의 연구와 기술적 전문성을 바탕으로, 엄선된 균주가 안정적이고 신뢰할 수 있는 원료로 공급됩니다.</p>
+				</div>
+
+				<div class="health__strain-layout">
+					<div class="health__strain-diagram">
+						<img
+							class="health__digestive-composition"
+							src="<?= plugins_url('assets/img/health/health_digestive_strains_ko.png', __FILE__) ?>"
+							alt="Digestive system showing the seven probiotic strains"
+						>
+					</div>
+
+					<div class="health__features">
+						<h3 class="health__subtitle">7종 프로바이오틱스의 특징</h3>
+						<ul class="health__feature-list">
+							<li class="health__feature">
+								<h4 class="health__feature-title">다양한 균주 구성</h4>
+								<p class="health__feature-text">장내의 다양한 환경을 고려하여 여러 균주를 함께 구성했습니다.</p>
+							</li>
+							<li class="health__feature">
+								<h4 class="health__feature-title">균주 특성 기반의 조합</h4>
+								<p class="health__feature-text">서로 다른 균주의 특성을 함께 고려했습니다.</p>
+							</li>
+							<li class="health__feature">
+								<h4 class="health__feature-title">장내 환경을 고려한 설계</h4>
+								<p class="health__feature-text">균형 잡힌 조성을 위해 배합을 고려했습니다.</p>
+							</li>
+							<li class="health__feature">
+								<h4 class="health__feature-title">GRAS(안전원료인증) 획득 균주</h4>
+								<p class="health__feature-text">FDA GRAS 및 Self-Affirmed GRAS  안전성을 인정받은 원료입니다.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="health__divider"></div>
+
+				<div class="health__biotic-grid">
+					<div class="health__biotic health__biotic--pre">
+						<h3 class="health__subtitle">5종의 프리바이오틱스</h3>
+						<p class="health__description">프로바이오틱스의 먹이 역할을 하여, 장내 유익균의 성장을 돕고 원활한 배변 활동을 지원합니다.</p>
+						<h4 class="health__detail-title">프리바이오틱스 종류</h4>
+						<ul class="health__prebiotic-list">
+							<li>프락토올리고당 (주원료)</li>
+							<li>갈락토올리고당 (부원료)</li>
+							<li>이눌린 (부원료)</li>
+							<li>난소화성말토덱스트린 (부원료)</li>
+							<li>자일로올리고당 (부원료)</li>
+						</ul>
+					</div>
+
+					<div class="health__biotic health__biotic--post">
+						<h3 class="health__subtitle">1종의 포스트바이오틱스</h3>
+						<p class="health__description">설계를 완성하는 마지막 퍼즐</p>
+						<h4 class="health__detail-title">포스트바이오틱스란 무엇인가?</h4>
+						<p class="health__detail-text">포스트바이오틱스는 살아있는 유익균이 아닌, 유익균의 사균체와 대사물질을 말합니다. 최근 장내 환경 연구 분야에서 포스트바이오틱스도 프로.프리바이오틱스와 함께 다뤄지며 주목을 받고 있습니다. 알파 제타 프로바이오틱스는 유산균 사균체를 더해, 프로. 프리. 포스트 3중 구성을 완성했습니다.</p>
+						<div class="health__disclaimer">
+							<p>* 부원료이며, 성분 유형에 대한 일반적인 설명입니다.</p>
+							<p>* 개별 효능을 의미하지 않습니다.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="health__technology-grid">
+				<div class="health__card health__card--freeze">
+					<h3 class="health__subtitle">유산균, 입에 털어 넣기만 하면, 다 살아서 갈까요?</h3>
+					<p class="health__description">동결건조 과정은 유산균의 생존율을 높이는데 효과적이지만, 건조과정에서 표면 손상이 발생할 수 있습니다.</p>
+					<div class="health__comparison health__comparison--arrow">
+						<div class="health__comparison-item">
+							<img class="health__comparison-img" src="<?= plugins_url('assets/img/info/info_bacteria_green.png', __FILE__) ?>" alt="" aria-hidden="true">
+							<p class="health__comparison-label">LIVE<br>PROBIOTICS</p>
+						</div>
+						<span class="health__direction" aria-hidden="true"></span>
+						<div class="health__comparison-item">
+							<img class="health__comparison-img" src="<?= plugins_url('assets/img/info/info_bacteria_blue.png', __FILE__) ?>" alt="" aria-hidden="true">
+							<p class="health__comparison-label">FREEZE-DRIED<br>PROBIOTICS</p>
+						</div>
+					</div>
+					<div class="health__detail">
+						<h4 class="health__detail-title">동결건조 유산균은?</h4>
+						<p class="health__detail-text">동결건조 분말화 기술은 유산균의 소비기한을 늘리고 유통을 편리하게 하기 위해 사용됩니다. 하지만 건조 과정에서 얼음 결정이 형성되어 유산균 세포막에 손상을 줄 수 있습니다.</p>
+					</div>
+				</div>
+
+				<div class="health__card health__card--zetabio">
+					<h3 class="health__subtitle">제타바이오® 기술 적용</h3>
+					<p class="health__description">알파 제타 프로바이오틱스는 특허받은 제타바이오® 기술을 담았습니다.</p>
+					<div class="health__comparison health__comparison--versus">
+						<div class="health__comparison-item">
+							<p class="health__comparison-label">물과 만난 동결건조 유산균</p>
+							<img class="health__comparison-img" src="<?= plugins_url('assets/img/info/info_bacteria_cyan.png', __FILE__) ?>" alt="" aria-hidden="true">
+							<p class="health__comparison-caption">동결건조 과정에서 세포막의 전기적 성질(전하)이 변화할 수 있습니다.</p>
+						</div>
+						<span class="health__vs" aria-hidden="true">VS</span>
+						<div class="health__comparison-item">
+							<p class="health__comparison-label">물과 만난 알파 제타 프로바이오틱스</p>
+							<img class="health__comparison-img" src="<?= plugins_url('assets/img/info/info_bacteria_coral.png', __FILE__) ?>" alt="" aria-hidden="true">
+							<p class="health__comparison-caption">제타바이오 기술로 동결건조된 유산균이 재활성화 되어 생균과 동일한 전하를 되찾습니다.</p>
+						</div>
+					</div>
+					<div class="health__detail">
+						<h4 class="health__detail-title">물 만난 유산균, 살아나는 유산균 엔진</h4>
+						<p class="health__detail-text">물과 만나 제타바이오 기술로 재 활성화된 유산균은 살아있는 유산균과 유사한 수준의 생존력과 장내 부착능력을 갖는 것으로 확인됩니다.</p>
+					</div>
+				</div>
+			</div>
 
 		</div>
 	</div>
