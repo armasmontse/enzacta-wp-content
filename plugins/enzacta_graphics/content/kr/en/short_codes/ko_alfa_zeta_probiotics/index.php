@@ -22,7 +22,7 @@
 
 ?>
 
-<body id="product-page">
+<div id="product-page" class="zeta-probiotics">
 
 	<!-- ========== HERO ========== -->
 
@@ -52,7 +52,6 @@
 					<div class="hero__nav">
 						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--info">TESTIMONIES ></p>
 						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--faq">FAQ ></p>
-						<a class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--buy" href="">BUY NOW</a>
 					</div>
 					<div class="hero__text">
 						<p class="hero__category">VITALITY</p>
@@ -432,28 +431,28 @@
 						<div class="instructions__separator"></div>
 						<div class="instructions__footer--icons">
 							<div class="instructions__footer--icon">
-								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_silicon_dioxide_badge.png', __FILE__) ?>" alt="No added silicon dioxide">
+								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_silicon_dioxide_badge_v2.jpg', __FILE__) ?>" alt="No added silicon dioxide">
 								<p class="instructions__footer--icon-text">
 									<span class="instructions__footer--icon-prefix">NO ADDED</span>
 									<span class="instructions__footer--icon-label">Silicon Dioxide</span>
 								</p>
 							</div>
 							<div class="instructions__footer--icon">
-								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_magnesium_stearate_badge.png', __FILE__) ?>" alt="No added magnesium stearate">
+								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_magnesium_stearate_badge_v2.jpg', __FILE__) ?>" alt="No added magnesium stearate">
 								<p class="instructions__footer--icon-text">
 									<span class="instructions__footer--icon-prefix">NO ADDED</span>
 									<span class="instructions__footer--icon-label">Magnesium Stearate</span>
 								</p>
 							</div>
 							<div class="instructions__footer--icon">
-								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_synthetic_preservatives_badge.png', __FILE__) ?>" alt="No added synthetic preservatives">
+								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_synthetic_preservatives_badge_v2.jpg', __FILE__) ?>" alt="No added synthetic preservatives">
 								<p class="instructions__footer--icon-text">
 									<span class="instructions__footer--icon-prefix">NO ADDED</span>
 									<span class="instructions__footer--icon-label">Synthetic Preservatives</span>
 								</p>
 							</div>
 							<div class="instructions__footer--icon">
-								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_artificial_colors_badge.png', __FILE__) ?>" alt="No added artificial colors">
+								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_artificial_colors_badge_v2.jpg', __FILE__) ?>" alt="No added artificial colors">
 								<p class="instructions__footer--icon-text">
 									<span class="instructions__footer--icon-prefix">NO ADDED</span>
 									<span class="instructions__footer--icon-label">Artificial Colors</span>
@@ -657,7 +656,7 @@
 		</div>
 	</div>
 
-</body>
+</div>
 
 
 <?php

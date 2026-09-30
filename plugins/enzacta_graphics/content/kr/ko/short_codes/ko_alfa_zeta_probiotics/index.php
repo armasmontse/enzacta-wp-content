@@ -22,7 +22,7 @@
 
 ?>
 
-<body id="product-page">
+<div id="product-page" class="zeta-probiotics">
 
 	<!-- ========== HERO ========== -->
 
@@ -52,7 +52,6 @@
 					<div class="hero__nav">
 						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--info">TESTIMONIES ></p>
 						<p class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--faq">FAQ ></p>
-						<a class="hero__nav-btn hero__nav-btn--desktop hero__nav-btn--buy" href="">BUY NOW</a>
 					</div>
 					<div class="hero__text">
 						<p class="hero__category">활력</p>
@@ -65,10 +64,10 @@
 						</p>
 						<div class="flexme">
 							<div class="hero__cta hero__cta--description">
-								DESCRIPTION
+								상세정보
 							</div>
 							<div class="hero__cta hero__cta--facts">
-								SUPPLEMENT FACTS
+								영양·기능정보
 							</div>
 						</div>
 					</div>
@@ -154,7 +153,7 @@
 			<div class="info__cards--box">
 				<div class="info__card--red">
 					<h3 class="info__card--title">
-						<span class="info__card--number">7</span>
+						<span class="info__card--number">7종</span>
 						<span class="info__card--label">프로바이오틱스</span>
 					</h3>
 					<div class="info--separator"></div>
@@ -166,7 +165,7 @@
 
 				<div class="info__card--green">
 					<h3 class="info__card--title">
-						<span class="info__card--number">5</span>
+						<span class="info__card--number">5종</span>
 						<span class="info__card--label">프리바이오틱스</span>
 					</h3>
 					<div class="info--separator"></div>
@@ -176,7 +175,7 @@
 				</div>
 				<div class="info__card--orange">
 					<h3 class="info__card--title">
-						<span class="info__card--number">1</span>
+						<span class="info__card--number">1종</span>
 						<span class="info__card--label">포스트바이오틱스</span>
 					</h3>
 					<div class="info--separator"></div>
@@ -422,28 +421,28 @@
 						<div class="instructions__separator"></div>
 						<div class="instructions__footer--icons">
 							<div class="instructions__footer--icon">
-								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_silicon_dioxide_badge.png', __FILE__) ?>" alt="이산화규소 무첨가">
+								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_silicon_dioxide_badge_v2.jpg', __FILE__) ?>" alt="이산화규소 무첨가">
 								<p class="instructions__footer--icon-text">
 									<span class="instructions__footer--icon-prefix">무첨가</span>
 									<span class="instructions__footer--icon-label">이산화규소</span>
 								</p>
 							</div>
 							<div class="instructions__footer--icon">
-								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_magnesium_stearate_badge.png', __FILE__) ?>" alt="스테아린산 마그네슘 무첨가">
+								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_magnesium_stearate_badge_v2.jpg', __FILE__) ?>" alt="스테아린산 마그네슘 무첨가">
 								<p class="instructions__footer--icon-text">
 									<span class="instructions__footer--icon-prefix">무첨가</span>
 									<span class="instructions__footer--icon-label">스테아린산 마그네슘</span>
 								</p>
 							</div>
 							<div class="instructions__footer--icon">
-								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_synthetic_preservatives_badge.png', __FILE__) ?>" alt="합성보존료 무첨가">
+								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_synthetic_preservatives_badge_v2.jpg', __FILE__) ?>" alt="합성보존료 무첨가">
 								<p class="instructions__footer--icon-text">
 									<span class="instructions__footer--icon-prefix">무첨가</span>
 									<span class="instructions__footer--icon-label">합성보존료</span>
 								</p>
 							</div>
 							<div class="instructions__footer--icon">
-								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_artificial_colors_badge.png', __FILE__) ?>" alt="합성착색료 무첨가">
+								<img class="instructions__footer--icon-img" src="<?= plugins_url('assets/img/health/health_no_artificial_colors_badge_v2.jpg', __FILE__) ?>" alt="합성착색료 무첨가">
 								<p class="instructions__footer--icon-text">
 									<span class="instructions__footer--icon-prefix">무첨가</span>
 									<span class="instructions__footer--icon-label">합성착색료</span>
@@ -628,7 +627,7 @@
 	<div class="facts js-section--facts" style="background: url(<?= plugins_url('assets/img/facts/facts_bg.jpg', __FILE__) ?>)">
 		<div class="facts__wrapper">
 			<div class="facts__card">
-				<img class="facts__img" alt="제품 정보 | 알파 제타 프로바이오틱스" src="<?= plugins_url('assets/img/facts/facts_zeta_probiotics.png', __FILE__) ?>">
+				<img class="facts__img" alt="제품 정보 | 알파 제타 프로바이오틱스" src="<?= plugins_url('assets/img/facts/facts_zeta_probiotics_ko.png', __FILE__) ?>">
 			</div>
 			<!-- <div class="facts__card">
 				<img class="facts__img" alt="Product Information | NUTRA Lite" src="<?= IMAGE_SERVER_BASE_PATH ?>/sites/4/2026/05/LITE_Nutritional_EN_2605.png">
@@ -639,14 +638,14 @@
 	<!-- ========== FOOTER PRODUCT ========== -->
 
 	<div class="product-footer">
-		<img class="product-footer__img" alt="알파 제타 프로바이오틱스" src="<?= plugins_url('assets/img/footer/footer_zeta_probiotics_composition.png', __FILE__) ?>">
+		<img class="product-footer__img" alt="알파 제타 프로바이오틱스" src="<?= plugins_url('assets/img/footer/footer_zeta_probiotics_composition_ko.png', __FILE__) ?>">
 		<p class="product-footer__text">내용량 : 150g (5g x 30 포)</p>
 		<div class="product-footer__disclaimer">
 			<p class="product-footer__disclaimer-text">*본 제품은 질병의 진단이나 치료 또는 예방을 목적으로 하지 않습니다.​</p>
 		</div>
 	</div>
 
-</body>
+</div>
 
 
 <?php

@@ -22,8 +22,11 @@
 	--pretendard: "pretendard", sans-serif;
 }
 
-#product-page,
-#product-page * {
+#product-page {
+	font-family: var(--pretendard);
+}
+
+#product-page :is(div, p, span, a, h1, h2, h3, h4, li, td) {
 	font-family: var(--pretendard) !important;
 }
 
@@ -150,42 +153,6 @@ body {
 .hero__nav .hero__nav-btn {
 	margin-right: 0 !important;
 	margin-left: 0 !important;
-}
-
-.hero__nav-btn.hero__nav-btn--buy {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	min-width: 140px;
-	padding: 14px 34px;
-	border: 0;
-	border-radius: 999px;
-	background-color: #cc6666;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
-	color: #ffffff;
-	font-family: var(--pretendard);
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 1;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: none;
-	white-space: nowrap;
-	box-sizing: border-box;
-}
-
-.hero__nav-btn.hero__nav-btn--buy:hover {
-	color: var(--text-gray);
-	text-decoration: none;
-	text-shadow: none;
-}
-
-.hero__nav-btn.hero__nav-btn--buy:focus-visible {
-	color: #ffffff;
-	text-decoration: none;
-	text-shadow: none;
-	outline: 2px solid var(--white);
-	outline-offset: 3px;
 }
 
 .hero__nav-btn--desktop {
@@ -709,7 +676,7 @@ span.icons__title-emphasis {
 .health .health__digestive-composition {
 	display: block;
 	width: 100%;
-	max-width: 520px;
+	max-width: 400px;
 	height: auto;
 	margin: 0 auto;
 	object-fit: contain;
@@ -2436,9 +2403,6 @@ iframe.video__container--iframe {
 	}
 	.hero__nav-btn {
 		text-shadow: 0px 0px 6px var(--white);
-	}
-	.hero__nav .hero__nav-btn--buy {
-		display: inline-flex;
 	}
 	.hero__category {
 		margin-bottom: 10px !important;
