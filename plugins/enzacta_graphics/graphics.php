@@ -36,6 +36,7 @@ add_shortcode('MX_partner_products',   'loadGraphicsContent');
 // --- MKT Products Pages ---
 //alfa CAFE NUTRA Lite KR | KO/EN
 add_shortcode('alfa_cafe_nutra_lite_blend_ko', 'loadGraphicsContent' );
+add_shortcode('home_page_ko', 'loadGraphicsContent' );
 
 // --- MKT Contact Us ---
 add_shortcode('contact_us',            'loadGraphicsContent');
@@ -64,4 +65,5 @@ add_shortcode('entrepreneur',      'loadGraphicsContent');
 // --- MKT KO ---
 // --- Product page ---
 add_shortcode('alfa-pxp-forte',      'loadGraphicsContent');
+add_shortcode('ko_magnet_charcoal_cleanser', 'loadGraphicsContent');
 ?>

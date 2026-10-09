@@ -1,0 +1,696 @@
+<meta charset="UTF-8">
+<title>Galacto Booster Hero</title>
+<!--
+  Sección "Cover" (hero) — alfa K:lumen · Galacto Refining Booster
+  Este fragmento es solo para la vista previa en el Artifact — carga el
+  mismo assets/css/styles.css que usa el proyecto real de WordPress
+  (index.php), para no duplicar el código en dos lugares. Las fuentes
+  (Playfair Display, Noto Sans KR, Pretendard) se cargan todas desde ese
+  CSS, no hace falta ningún <link> de fuentes aquí.
+
+  OJO: a diferencia de index.php (que ya usa las rutas absolutas del
+  servidor de imágenes), aquí las fotos se quedan en rutas locales
+  (assets/*.jpg) a propósito, para que esta vista previa siga funcionando
+  sin depender de que las imágenes ya estén subidas al servidor. Por la
+  misma razón, los fondos que van por CSS (point01, point02) se ven aquí
+  como color sólido sin foto — esas sí usan la ruta absoluta del servidor
+  dentro de styles.css, que aún no existe públicamente. Las 2 imágenes de
+  burbujas (collagen/moisture) SÍ se ven aquí abajo, con un override local
+  solo para esta vista previa — ver nota junto al <style>.
+-->
+
+<link rel="stylesheet" href="assets/css/styles.css">
+<style>
+  /* Override SOLO para esta vista previa del Artifact: las imágenes nuevas
+     de burbujas (collagen-bubbles-02.png / moisture-bubbles-02.png) todavía
+     no están subidas al servidor de medios de WordPress, así que styles.css
+     apunta a una URL que aún no existe públicamente. Acá se sustituye por
+     la copia local empaquetada con el Artifact, nada más para poder verla.
+     index.php no necesita este override: en cuanto Jenn suba los 2 archivos
+     al servidor con esos mismos nombres, la URL de styles.css funcionará
+     tal cual, sin tocar nada más.
+
+     El logo del watermark de .enzkr-point6__bottle NO necesita override:
+     va incrustado como data URI directo en styles.css (no como url() al
+     servidor), así que se ve igual aquí, en index.php y en el sitio real
+     sin depender de rutas ni de CORS. */
+  .enzkr-point__mini--collagen { background-image: url('assets/collagen-bubbles-02.png'); }
+  .enzkr-point__mini--moisture { background-image: url('assets/moisture-bubbles-02.png'); }
+</style>
+
+<section class="enzkr-cleanser" id="enzkr-cover">
+
+  <div class="enzkr-hero">
+    <div class="enzkr-hero__bg">
+      <img src="assets/HERO-BOOSTER-260924.jpg" alt="Modelo aplicando alfa K:lumen Galacto Refining Booster sobre la piel">
+    </div>
+    <div class="enzkr-hero__inner">
+      <div class="enzkr-hero__kicker">
+        <p class="enzkr-hero__eyebrow">Skincare</p>
+        <span class="enzkr-hero__rule"></span>
+        <p class="enzkr-hero__routine">Routine 02</p>
+      </div>
+
+      <span class="enzkr-hero__badge">Bio Architecture System™</span>
+
+      <div class="enzkr-hero__content">
+        <div class="enzkr-hero__text">
+          <img class="enzkr-hero__brand" src="assets/alfaklumen-logo.png" alt="alfa K : Lumen">
+
+          <p class="enzkr-hero__tag">Ferment-Powered Skin Refining</p>
+
+          <p class="enzkr-hero__subtitle">Galacto Refining</p>
+
+          <h1 class="enzkr-hero__title">BOOSTER</h1>
+
+          <p class="enzkr-hero__desc">With 74% Galactomyces Ferment Filtrate, collagen, and hyaluronic acid, this post-cleansing booster refines texture, boosts radiance, hydrates, and prepares skin for the next steps.</p>
+
+          <div class="enzkr-hero__actions">
+            <button class="enzkr-btn enzkr-btn--primary" type="button">Description</button>
+            <button class="enzkr-btn enzkr-btn--ghost" type="button">Facts</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="enzkr-hero__figure">
+        <img class="enzkr-hero__bottle" src="assets/booster-bottle.png" alt="Frasco de alfa K:lumen Galacto Refining Booster, 80ml">
+        <img class="enzkr-hero__seal" src="assets/sello-coreano.png" alt="Sello coreano de certificación: blanqueamiento y mejora de arrugas, doble funcionalidad">
+      </div>
+    </div>
+  </div>
+
+  <div class="enzkr-stats">
+    <p class="enzkr-stats__intro">On freshly cleansed skin, what comes next</p>
+    <h2 class="enzkr-stats__title">SETS THE TONE FOR THE DAY</h2>
+    <div class="enzkr-stats__grid">
+      <div class="enzkr-stat" data-value="74" data-suffix="%">
+        <span class="enzkr-stat__label">GALACTOMYCES FERMENT FILTRATE</span>
+        <span class="enzkr-stat__value">0%</span>
+      </div>
+      <div class="enzkr-stat" data-value="2.4" data-suffix="%" data-decimals="1">
+        <span class="enzkr-stat__label">PURIFIED WATER CONTENT</span>
+        <span class="enzkr-stat__value">0%</span>
+      </div>
+      <div class="enzkr-stat" data-value="347.44" data-suffix="%" data-decimals="2">
+        <span class="enzkr-stat__label">IMMEDIATE HYDRATION INCREASE</span>
+        <span class="enzkr-stat__value">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="enzkr-problem">
+    <p class="enzkr-problem__eyebrow">[ 문제 · PROBLEM ]</p>
+    <p class="enzkr-problem__intro">When skin concerns return despite layers of care,</p>
+    <h2 class="enzkr-problem__title">THE ISSUE MAY START BEFORE ABSORPTION</h2>
+    <span class="enzkr-problem__rule"></span>
+
+    <div class="enzkr-problem__card">
+      <p class="enzkr-problem__card-eyebrow">Not a Toner</p>
+      <h3 class="enzkr-problem__card-title">A Booster for Texture, Radiance &amp; Tone</h3>
+
+      <div class="enzkr-problem__image-wrap">
+        <img src="assets/not-a-toner.jpg" alt="Frascos de skincare sobre un estante, representando la rutina previa al booster">
+        <span class="enzkr-problem__badge enzkr-problem__badge--1">Still using toner just to refine skin texture?</span>
+        <span class="enzkr-problem__badge enzkr-problem__badge--2">Is toner merely the final step in your cleanse?</span>
+        <span class="enzkr-problem__badge enzkr-problem__badge--3">Satisfied with surface-level hydration alone?</span>
+      </div>
+
+      <div class="enzkr-problem__note">
+        <p class="enzkr-problem__note-text">When skin isn't properly prepared, high-performance skincare may remain on the surface</p>
+        <p class="enzkr-problem__note-sub">Beyond Hydration.</p>
+        <p class="enzkr-problem__note-cta">A Concentrated Boost.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="enzkr-refine">
+    <div class="enzkr-refine__inner">
+      <img class="enzkr-refine__bg" src="assets/Refine.jpg" alt="Modelo sosteniendo el frasco de alfa K:lumen Galacto Refining Booster">
+      <span class="enzkr-refine__word">REFINE</span>
+    </div>
+  </div>
+
+  <div class="enzkr-point">
+    <div class="enzkr-point__inner">
+
+      <div class="enzkr-point__head">
+        <p class="enzkr-point__eyebrow">[ 핵심 · POINT 01 ]</p>
+        <p class="enzkr-point__intro">The moment skin is freshly cleansed, the booster creates</p>
+        <h2 class="enzkr-point__title">A STRONG FOUNDATION FOR ABSORPTION</h2>
+        <span class="enzkr-point__rule"></span>
+      </div>
+
+      <div class="enzkr-point__card">
+        <div class="enzkr-point__photo">
+          <img src="assets/fermentation-artisan-02.jpg" alt="Maestro fermentador seleccionando arroz a mano, tradición artesanal detrás de Galactomyces Ferment Filtrate">
+        </div>
+        <div class="enzkr-point__content">
+          <span class="enzkr-point__badge">NO. 1</span>
+          <p class="enzkr-point__content-eyebrow">The Difference Starts at the Base</p>
+          <h3 class="enzkr-point__content-title">74% GALACTOMYCES<br>FERMENT FILTRATE</h3>
+          <span class="enzkr-point__rule enzkr-point__rule--left"></span>
+
+          <div class="enzkr-point__chart">
+            <div class="enzkr-point__chart-row">
+              <p class="enzkr-point__chart-label">Regular Toner</p>
+              <div class="enzkr-point__bar enzkr-point__bar--light">
+                <span class="enzkr-point__bar-fill" data-width="100"><span class="enzkr-point__bar-text">Purified Water: 70–90%</span></span>
+              </div>
+            </div>
+            <div class="enzkr-point__chart-row enzkr-point__chart-row--booster">
+              <p class="enzkr-point__chart-label">Galacto Refining BOOSTER</p>
+              <div class="enzkr-point__bar enzkr-point__bar--dark">
+                <span class="enzkr-point__bar-notch"></span>
+                <span class="enzkr-point__bar-fill" data-width="88"><span class="enzkr-point__bar-text">Galactomyces Ferment Filtrate: 74%</span></span>
+              </div>
+              <div class="enzkr-point__bar-footnote">
+                <span class="enzkr-point__bar-tick"></span>
+                <p class="enzkr-point__bar-note">Purified Water: 2.4%</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="enzkr-point__text">With 74% Galactomyces Ferment Filtrate and just 2.4% purified water, this concentrated formula helps support the skin's microbiome and pH balance after cleansing, opening a "moisture pathway" for the next steps in your routine.</p>
+
+          <span class="enzkr-point__rule enzkr-point__rule--left"></span>
+
+          <h4 class="enzkr-point__secret-title">The Fermentation Artisan's Secret</h4>
+          <p class="enzkr-point__text">The story of Galactomyces traces back to traditional fermentation artisans, whose hands were said to remain clear and supple even after years of work showed on their faces. This contrast drew attention to the naturally fermented yeast they handled every day and inspired interest in Galactomyces Ferment Filtrate.</p>
+          <p class="enzkr-point__text">Derived through natural fermentation, this skin-conditioning ingredient helps refine the appearance of rough texture and supports a clearer, smoother, more balanced-looking complexion.</p>
+          <p class="enzkr-point__disclaimer">*Benefits described are based on ingredient characteristics.</p>
+        </div>
+      </div>
+
+      <div class="enzkr-point__grid">
+        <div class="enzkr-point__mini enzkr-point__mini--collagen">
+          <span class="enzkr-point__mini-badge">NO. 2</span>
+          <div class="enzkr-point__mini-body">
+            <p class="enzkr-point__mini-label">What Is a Collagen Elasticity Network?</p>
+            <h3 class="enzkr-point__mini-title">A DENSE NETWORK, BUILT<br>TO HOLD ITS SHAPE</h3>
+            <span class="enzkr-point__rule enzkr-point__rule--mini"></span>
+            <div class="enzkr-point__mini-stat">
+              <span class="enzkr-point__mini-vline"></span>
+              <div class="enzkr-point__mini-stat-inner">
+                <p class="enzkr-point__mini-stat-label">Four Key Collagen Analogs</p>
+                <p class="enzkr-point__mini-stat-value">Types I · III · VII · XXI</p>
+              </div>
+              <span class="enzkr-point__mini-vline"></span>
+            </div>
+            <p class="enzkr-point__mini-text">REVIVE-SOME™ liposome technology is designed to support the delivery of this multi-collagen complex, creating a dense, cushiony feel that lasts.</p>
+            <p class="enzkr-point__mini-cta">Cushiony Resilience That Lasts</p>
+          </div>
+        </div>
+
+        <div class="enzkr-point__mini enzkr-point__mini--moisture">
+          <span class="enzkr-point__mini-badge">NO. 3</span>
+          <div class="enzkr-point__mini-body">
+            <p class="enzkr-point__mini-label">What Is a 3D Moisture Network?</p>
+            <h3 class="enzkr-point__mini-title">A CUSHION OF HYDRATION,<br>WITH A FRESH FINISH</h3>
+            <span class="enzkr-point__rule enzkr-point__rule--mini"></span>
+            <div class="enzkr-point__mini-stat">
+              <span class="enzkr-point__mini-vline"></span>
+              <div class="enzkr-point__mini-stat-inner">
+                <p class="enzkr-point__mini-stat-label">High-Molecular-Weight HA</p>
+                <p class="enzkr-point__mini-stat-value">2,000 ppm · 1 MDa</p>
+              </div>
+              <span class="enzkr-point__mini-vline"></span>
+            </div>
+            <p class="enzkr-point__mini-text">Vol-HA forms a 3D moisture network within the collagen support structure, helping reduce moisture loss and maintain hydration for up to 24 hours.*</p>
+            <p class="enzkr-point__mini-cta">Cushiony Hydration That Lasts</p>
+            <p class="enzkr-point__disclaimer enzkr-point__disclaimer--mini">*Benefits described are based on ingredient characteristics.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="enzkr-point2">
+    <div class="enzkr-point2__inner">
+
+      <div class="enzkr-point2__head">
+        <p class="enzkr-point2__eyebrow">[ 핵심 · POINT 02 ]</p>
+        <p class="enzkr-point2__intro">All in a Single Drop</p>
+        <h2 class="enzkr-point2__title">A BLEND OF SIX BOOSTING INGREDIENTS</h2>
+        <span class="enzkr-point2__rule"></span>
+      </div>
+
+      <div class="enzkr-point2__grid">
+
+        <div class="enzkr-point2__card enzkr-point2__card--01" style="background-image:url('assets/ingredient-01.jpg')">
+          <img class="enzkr-point2__icon" src="assets/icon-diamond-light.png" alt="">
+          <span class="enzkr-point2__num">01</span>
+          <h3 class="enzkr-point2__name">GALACTOMYCES<br>FERMENT FILTRATE</h3>
+          <div class="enzkr-point2__stat">
+            <span class="enzkr-point2__stat-vline"></span>
+            <div class="enzkr-point2__stat-inner">
+              <p class="enzkr-point2__stat-value">74%</p>
+              <p class="enzkr-point2__stat-label">FERMENT-POWERED<br>BOOST</p>
+            </div>
+            <span class="enzkr-point2__stat-vline"></span>
+          </div>
+          <p class="enzkr-point2__text">Helps refine the look of rough texture, revive dull tone, and restore visible radiance, awakening the complexion with concentrated ferment care.</p>
+        </div>
+
+        <div class="enzkr-point2__card enzkr-point2__card--02" style="background-image:url('assets/ingredient-02.jpg')">
+          <img class="enzkr-point2__icon" src="assets/icon-diamond-dark.png" alt="">
+          <span class="enzkr-point2__num">02</span>
+          <h3 class="enzkr-point2__name">ELASTICITY COLLAGEN<br>NETWORK</h3>
+          <div class="enzkr-point2__stat">
+            <span class="enzkr-point2__stat-vline"></span>
+            <div class="enzkr-point2__stat-inner">
+              <p class="enzkr-point2__stat-value">Multi-Collagen</p>
+              <p class="enzkr-point2__stat-label">CUSHIONY RESILIENCE<br>CARE</p>
+            </div>
+            <span class="enzkr-point2__stat-vline"></span>
+          </div>
+          <p class="enzkr-point2__text">Four collagen analogs, Type VI cushion collagen, and 300 Da collagen form a dense network supported by REVIVE-SOME™ technology.</p>
+        </div>
+
+        <div class="enzkr-point2__card enzkr-point2__card--03" style="background-image:url('assets/ingredient-03.jpg')">
+          <img class="enzkr-point2__icon" src="assets/icon-star-dark.png" alt="">
+          <span class="enzkr-point2__num">03</span>
+          <h3 class="enzkr-point2__name">HIGH MOLECULAR WEIGHT<br>HYALURONIC ACID</h3>
+          <div class="enzkr-point2__stat">
+            <span class="enzkr-point2__stat-vline"></span>
+            <div class="enzkr-point2__stat-inner">
+              <p class="enzkr-point2__stat-value">2,000 ppm</p>
+              <p class="enzkr-point2__stat-label">3D MOISTURE<br>NETWORK</p>
+            </div>
+            <span class="enzkr-point2__stat-vline"></span>
+          </div>
+          <p class="enzkr-point2__text">Forms a 3D moisture network that helps retain hydration, leaving skin looking dewy with a soft, cushiony feel.</p>
+        </div>
+
+        <div class="enzkr-point2__card enzkr-point2__card--04" style="background-image:url('assets/ingredient-04.jpg')">
+          <img class="enzkr-point2__icon" src="assets/icon-star-green.png" alt="">
+          <span class="enzkr-point2__num">04</span>
+          <h3 class="enzkr-point2__name">MILD PHA<br>GLUCONOLACTONE</h3>
+          <div class="enzkr-point2__stat">
+            <span class="enzkr-point2__stat-vline"></span>
+            <div class="enzkr-point2__stat-inner">
+              <p class="enzkr-point2__stat-value">Gentle</p>
+              <p class="enzkr-point2__stat-label">DAILY TEXTURE CARE</p>
+            </div>
+            <span class="enzkr-point2__stat-vline"></span>
+          </div>
+          <p class="enzkr-point2__text">Gently helps remove surface buildup and excess sebum to smooth rough-looking texture, supporting comfortable daily skin refinement.</p>
+        </div>
+
+        <div class="enzkr-point2__card enzkr-point2__card--05" style="background-image:url('assets/ingredient-05.jpg')">
+          <img class="enzkr-point2__icon" src="assets/icon-star-dark.png" alt="">
+          <span class="enzkr-point2__num">05</span>
+          <h3 class="enzkr-point2__name">RICE EXTRACT</h3>
+          <div class="enzkr-point2__stat">
+            <span class="enzkr-point2__stat-vline"></span>
+            <div class="enzkr-point2__stat-inner">
+              <p class="enzkr-point2__stat-value">Vitality</p>
+              <p class="enzkr-point2__stat-label">RADIANCE CARE</p>
+            </div>
+            <span class="enzkr-point2__stat-vline"></span>
+          </div>
+          <p class="enzkr-point2__text">A powerful antioxidant ingredient that helps promote a clear and even complexion while supporting skin that looks radiant and revitalized.</p>
+        </div>
+
+        <div class="enzkr-point2__card enzkr-point2__card--06" style="background-image:url('assets/ingredient-06.jpg')">
+          <img class="enzkr-point2__icon" src="assets/icon-star-dark.png" alt="">
+          <span class="enzkr-point2__num">06</span>
+          <h3 class="enzkr-point2__name">CERAMIDE NP<br>+ BETA-GLUCAN</h3>
+          <div class="enzkr-point2__stat">
+            <span class="enzkr-point2__stat-vline"></span>
+            <div class="enzkr-point2__stat-inner">
+              <p class="enzkr-point2__stat-value">Dual</p>
+              <p class="enzkr-point2__stat-label">BARRIER SUPPORT</p>
+            </div>
+            <span class="enzkr-point2__stat-vline"></span>
+          </div>
+          <p class="enzkr-point2__text">The combined moisturizing and barrier care benefits of these two ingredients help maintain a healthy skin barrier even after cleansing.</p>
+        </div>
+
+      </div>
+
+      <p class="enzkr-point2__disclaimer">*Descriptions refer to the properties of the raw ingredients.</p>
+
+    </div>
+  </div>
+
+  <div class="enzkr-point3">
+    <div class="enzkr-point3__frame">
+      <div class="enzkr-point3__photo">
+        <img src="assets/point03-bg.jpg" alt="Mano recibiendo gotas de alfa K:lumen Galacto Refining Booster">
+        <div class="enzkr-point3__head">
+          <p class="enzkr-point3__eyebrow">[ 핵심 · POINT 03 ]</p>
+          <p class="enzkr-point3__intro">The Measure of a Good Booster</p>
+          <h2 class="enzkr-point3__title">IMMEDIATE RESULTS, MEASURED ON SKIN</h2>
+          <span class="enzkr-point3__rule"></span>
+        </div>
+      </div>
+      <div class="enzkr-point3__photo-fade"></div>
+    </div>
+
+    <div class="enzkr-point3__inner">
+
+      <div class="enzkr-point3__card">
+        <p class="enzkr-point3__trial-label">CLINICAL TRIAL 01</p>
+        <p class="enzkr-point3__trial-intro">Hydration That Builds From Within</p>
+        <h3 class="enzkr-point3__trial-title">SKIN MOISTURE DENSITY</h3>
+        <span class="enzkr-point3__rule enzkr-point3__rule--card"></span>
+
+        <div class="enzkr-point3__stat" data-value="347.44" data-decimals="2" data-suffix="%">
+          <p class="enzkr-point3__stat-value">0%</p>
+          <p class="enzkr-point3__stat-label">IMPROVEMENT</p>
+        </div>
+        <p class="enzkr-point3__test-label">Human application test completed</p>
+
+        <div class="enzkr-point3__scale-row">
+          <span class="enzkr-point3__scale-min">0</span>
+          <div class="enzkr-point3__scale-track">
+            <span class="enzkr-point3__scale-fill enzkr-point3__scale-fill--before" data-width="15.93"></span>
+            <span class="enzkr-point3__scale-tick" style="left:15.93%">
+              <span class="enzkr-point3__scale-tick-value">38.22 A.U.</span>
+              <span class="enzkr-point3__scale-tick-arrow"></span>
+            </span>
+          </div>
+          <span class="enzkr-point3__scale-max">240 A.U.</span>
+        </div>
+        <p class="enzkr-point3__scale-caption enzkr-point3__scale-caption--before">Before use</p>
+
+        <div class="enzkr-point3__scale-row enzkr-point3__scale-row--after">
+          <span class="enzkr-point3__scale-min">0</span>
+          <div class="enzkr-point3__scale-track">
+            <span class="enzkr-point3__scale-fill enzkr-point3__scale-fill--after" data-width="71.29"></span>
+            <span class="enzkr-point3__scale-tick" style="left:71.29%">
+              <span class="enzkr-point3__scale-tick-value">171.1 A.U.</span>
+              <span class="enzkr-point3__scale-tick-arrow"></span>
+            </span>
+          </div>
+          <span class="enzkr-point3__scale-max">240 A.U.</span>
+        </div>
+        <p class="enzkr-point3__scale-caption">Immediately after one use</p>
+
+        <p class="enzkr-point3__footnote">
+          A.U. = Arbitrary Units, a relative scale used by the test instrument.<br>
+          [Human Application Test: Skin Hydration (Moisture Density) Improvement]<br>
+          <span class="enzkr-point3__footnote-fine">Korea Bio Clinical Research Center Co., Ltd. / April 27 to 30, 2026 / 22 adult participants / Individual results may vary.</span>
+        </p>
+      </div>
+
+      <div class="enzkr-point3__card">
+        <p class="enzkr-point3__trial-label">CLINICAL TRIAL 02</p>
+        <p class="enzkr-point3__trial-intro">A Visible Shift in Radiance</p>
+        <h3 class="enzkr-point3__trial-title">SKIN CLARITY &amp; RADIANCE</h3>
+        <span class="enzkr-point3__rule enzkr-point3__rule--card"></span>
+
+        <div class="enzkr-point3__stat" data-value="85.74" data-decimals="2" data-suffix="%">
+          <p class="enzkr-point3__stat-value">0%</p>
+          <p class="enzkr-point3__stat-label">IMPROVEMENT</p>
+        </div>
+        <p class="enzkr-point3__test-label">Human application test completed</p>
+
+        <div class="enzkr-point3__columns">
+          <div class="enzkr-point3__col-group">
+            <span class="enzkr-point3__col-max">15 G.U.</span>
+            <div class="enzkr-point3__col-wrap">
+              <span class="enzkr-point3__col-tick enzkr-point3__col-tick--left" style="bottom:38.8%">5.82 G.U. <span class="enzkr-point3__col-tick-arrow">←</span></span>
+              <div class="enzkr-point3__col-track">
+                <span class="enzkr-point3__col-fill enzkr-point3__col-fill--before" data-height="38.8"><span class="enzkr-point3__col-zero">0</span></span>
+              </div>
+            </div>
+            <p class="enzkr-point3__col-caption">Before use</p>
+          </div>
+          <div class="enzkr-point3__col-group">
+            <span class="enzkr-point3__col-max">15 G.U.</span>
+            <div class="enzkr-point3__col-wrap">
+              <span class="enzkr-point3__col-tick enzkr-point3__col-tick--right" style="bottom:72.07%"><span class="enzkr-point3__col-tick-arrow">→</span> 10.81 G.U.</span>
+              <div class="enzkr-point3__col-track">
+                <span class="enzkr-point3__col-fill enzkr-point3__col-fill--after" data-height="72.07"><span class="enzkr-point3__col-zero">0</span></span>
+              </div>
+            </div>
+            <p class="enzkr-point3__col-caption">Immediately after<br>one use</p>
+          </div>
+        </div>
+
+        <p class="enzkr-point3__footnote">
+          G.U. = Gloss Units, a measure of surface gloss based on reflected light.<br>
+          [Human Application Test: Skin Radiance Improvement]<br>
+          <span class="enzkr-point3__footnote-fine">Korea Bio Clinical Research Center Co., Ltd. / April 27 to 30, 2026 / 22 adult participants / Individual results may vary.</span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="enzkr-point4">
+    <div class="enzkr-point4__bg">
+      <img src="assets/point04-bg.jpg" alt="Textura con gotas de gel de alfa K:lumen Galacto Refining Booster">
+      <div class="enzkr-point4__bg-fade"></div>
+      <div class="enzkr-point4__frame">
+        <div class="enzkr-point4__head">
+          <p class="enzkr-point4__eyebrow">[ 핵심 · POINT 04 ]</p>
+          <p class="enzkr-point4__intro">Fresh Hydration From the First Touch</p>
+          <h2 class="enzkr-point4__title">A CUSHIONED DROP THAT AWAKENS SKIN</h2>
+          <span class="enzkr-point4__rule"></span>
+        </div>
+
+        <div class="enzkr-point4__callout enzkr-point4__callout--small">
+          <div class="enzkr-point4__callout-text">
+            <p class="enzkr-point4__callout-title">CUSHIONING THAT BUILDS</p>
+            <p class="enzkr-point4__callout-sub">A plush feel develops as you massage</p>
+          </div>
+          <span class="enzkr-point4__callout-line"></span>
+        </div>
+        <div class="enzkr-point4__callout enzkr-point4__callout--large">
+          <span class="enzkr-point4__callout-line"></span>
+          <div class="enzkr-point4__callout-text">
+            <p class="enzkr-point4__callout-title">FRESH, BOUNCY FINISH</p>
+            <p class="enzkr-point4__callout-sub">Comfortable hydration without stickiness</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="enzkr-point4__card">
+      <div class="enzkr-point4__card-inner">
+        <div class="enzkr-point4__photo">
+          <img src="assets/point04-model.jpg" alt="Modelo aplicando alfa K:lumen Galacto Refining Booster en el rostro">
+        </div>
+        <div class="enzkr-point4__content">
+          <span class="enzkr-point4__content-rule"></span>
+          <p class="enzkr-point4__content-text">Fluid and refreshing at first touch, the concentrated formula becomes richly cushioning as it glides across the skin,</p>
+          <p class="enzkr-point4__content-highlight">leaving a fresh, bouncy finish without a sticky feel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="enzkr-point5">
+    <div class="enzkr-point5__bg">
+      <img src="assets/point051-bg.jpg" alt="Modelo aplicando alfa K:lumen Galacto Refining Booster sobre el rostro, con la piel en calma">
+      <div class="enzkr-point5__bg-fade"></div>
+      <div class="enzkr-point5__head">
+        <p class="enzkr-point5__eyebrow">[ 핵심 · POINT 05 ]</p>
+        <p class="enzkr-point5__intro">For Freshly Cleansed Skin</p>
+        <h2 class="enzkr-point5__title">BOOST WITH CONFIDENCE</h2>
+        <span class="enzkr-point5__rule"></span>
+      </div>
+    </div>
+
+    <div class="enzkr-point5__card">
+      <div class="enzkr-point5__card-inner">
+
+        <div class="enzkr-point5__top">
+          <div class="enzkr-point5__thumb">
+            <img src="assets/point05-bottle.jpg" alt="Frasco de alfa K:lumen Galacto Refining Booster">
+          </div>
+          <div class="enzkr-point5__intro-block">
+            <span class="enzkr-point5__rule--small"></span>
+            <p class="enzkr-point5__eyebrow--card">Gentle Care After Cleansing</p>
+            <h3 class="enzkr-point5__subtitle">A Refined Start</h3>
+            <p class="enzkr-point5__text">Lightweight hydration and a cushiony, non-sticky finish help prepare freshly cleansed skin for the next step.</p>
+          </div>
+        </div>
+
+        <div class="enzkr-point5__tested">
+          <h3 class="enzkr-point5__tested-title">Tested for Skin Comfort</h3>
+          <p class="enzkr-point5__tested-sub">PRIMARY SKIN IRRITATION TEST COMPLETED</p>
+        </div>
+
+        <div class="enzkr-point5__proof">
+          <div class="enzkr-point5__proof-cert">
+            <img src="assets/point05-cert.jpg" alt="Certificado de resultados de prueba: Korea Bio Clinical Research Center">
+          </div>
+          <div class="enzkr-point5__proof-table">
+            <img src="assets/point05-table.jpg" alt="Tabla 7: Sensibilidad de la piel autoreportada por los participantes">
+          </div>
+        </div>
+
+        <div class="enzkr-point5__result">
+          <p class="enzkr-point5__score">Average skin reaction score: 0.00</p>
+          <p class="enzkr-point5__classified">Classified as non-irritating under the test conditions</p>
+          <p class="enzkr-point5__confidence">Use with confidence.</p>
+        </div>
+
+        <p class="enzkr-point5__footnote">[Official test result certificate issued by the Korea Bio Clinical Research Center, confirming an average skin reaction score of 0.00 and a &ldquo;non-irritating&rdquo; classification in the primary skin irritation test.]</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="enzkr-point6">
+    <div class="enzkr-point6__head">
+      <p class="enzkr-point6__eyebrow">사용 방법</p>
+      <h2 class="enzkr-point6__title">HOW TO USE</h2>
+      <span class="enzkr-point6__rule"></span>
+    </div>
+
+    <div class="enzkr-point6__steps">
+      <div class="enzkr-point6__step">
+        <div class="enzkr-point6__step-photo"><img src="assets/point06-step1.jpg" alt="Aplicando una gota de alfa K:lumen Galacto Refining Booster sobre la palma de la mano"></div>
+        <p class="enzkr-point6__step-label">STEP</p>
+        <p class="enzkr-point6__step-number">01</p>
+        <span class="enzkr-point6__step-rule"></span>
+        <h3 class="enzkr-point6__step-title">Begin on Freshly Cleansed Skin</h3>
+        <p class="enzkr-point6__step-text">Immediately after cleansing, dispense a small amount into your palm. Applying it directly with your hands rather than a cotton pad allows you to fully experience the BOOSTER&rsquo;s cushiony texture and skin-hugging feel.</p>
+      </div>
+      <div class="enzkr-point6__step">
+        <div class="enzkr-point6__step-photo"><img src="assets/point06-step2.jpg" alt="Modelo aplicando el producto sobre el rostro con movimientos circulares"></div>
+        <p class="enzkr-point6__step-label">STEP</p>
+        <p class="enzkr-point6__step-number">02</p>
+        <span class="enzkr-point6__step-rule"></span>
+        <h3 class="enzkr-point6__step-title">Smooth &amp; Press</h3>
+        <p class="enzkr-point6__step-text">Gently smooth over the entire face using soft, circular motions. Finish by wrapping your face with the warmth of your palms and pressing gently to help the formula settle comfortably into the skin.</p>
+      </div>
+      <div class="enzkr-point6__step">
+        <div class="enzkr-point6__step-photo"><img src="assets/point06-step3.jpg" alt="Modelo presionando suavemente el producto sobre la piel"></div>
+        <p class="enzkr-point6__step-label">STEP</p>
+        <p class="enzkr-point6__step-number">03</p>
+        <span class="enzkr-point6__step-rule"></span>
+        <h3 class="enzkr-point6__step-title">Layer for Extra Care</h3>
+        <p class="enzkr-point6__step-text">When skin feels particularly rough or dry, apply two to three thin layers. This concentrated layering technique leaves skin feeling more hydrated, supple, and comfortably cushioned.</p>
+      </div>
+    </div>
+
+    <div class="enzkr-point6__bottle">
+      <img src="assets/point061.jpg" alt="Línea de frascos de alfa K:lumen Galacto Refining Booster">
+    </div>
+  </div>
+
+  <div class="enzkr-specs">
+    <div class="enzkr-specs__head">
+      <p class="enzkr-specs__eyebrow">[ 상품정보제공고시 &middot; Product Details ]</p>
+      <h2 class="enzkr-specs__title">PRODUCT SPECIFICATIONS</h2>
+      <span class="enzkr-specs__rule"></span>
+    </div>
+
+    <div class="enzkr-specs__card">
+      <div class="enzkr-specs__grid">
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Product</p>
+          <p class="enzkr-specs__value">alfa K:Lumen Galacto Refining BOOSTER</p>
+        </div>
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Net Content</p>
+          <p class="enzkr-specs__value">80 ml / 2.7 fl. oz.</p>
+        </div>
+
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Skin Type</p>
+          <p class="enzkr-specs__value">Suitable for all skin types</p>
+          <p class="enzkr-specs__sub">Classified as non-irritating in a human primary skin irritation test</p>
+        </div>
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Shelf Life</p>
+          <p class="enzkr-specs__value">36 months from manufacture</p>
+          <p class="enzkr-specs__sub">Use within 12 months after opening</p>
+        </div>
+
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Functional Classification (Korea)</p>
+          <p class="enzkr-specs__value">Dual-function cosmetic for brightening and wrinkle improvement</p>
+        </div>
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Benefits</p>
+          <p class="enzkr-specs__value">Helps brighten the appearance of skin</p>
+          <p class="enzkr-specs__value">Helps improve the appearance of wrinkles</p>
+        </div>
+
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Made In</p>
+          <p class="enzkr-specs__value enzkr-specs__value--flag">Republic of Korea <span class="enzkr-specs__flag"><svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bandera de Corea del Sur">
+            <rect width="900" height="600" fill="#ffffff"/>
+            <g>
+              <path d="M450,192 a54,54 0 0 1 0,108 a54,54 0 0 0 0,108 a108,108 0 0 0 0,-216 z" fill="#0047a0"/>
+              <path d="M450,192 a108,108 0 0 0 0,216 a54,54 0 0 1 0,-108 a54,54 0 0 0 0,-108 z" fill="#cd2e3a"/>
+            </g>
+            <g fill="#000000">
+              <rect x="115" y="120" width="130" height="17"/>
+              <rect x="115" y="156" width="130" height="17"/>
+              <rect x="115" y="192" width="130" height="17"/>
+              <rect x="655" y="391" width="55" height="17"/>
+              <rect x="730" y="391" width="55" height="17"/>
+              <rect x="655" y="427" width="55" height="17"/>
+              <rect x="730" y="427" width="55" height="17"/>
+              <rect x="655" y="463" width="55" height="17"/>
+              <rect x="730" y="463" width="55" height="17"/>
+              <rect x="655" y="120" width="55" height="17"/>
+              <rect x="730" y="120" width="55" height="17"/>
+              <rect x="655" y="156" width="130" height="17"/>
+              <rect x="655" y="192" width="55" height="17"/>
+              <rect x="730" y="192" width="55" height="17"/>
+              <rect x="115" y="391" width="130" height="17"/>
+              <rect x="115" y="427" width="55" height="17"/>
+              <rect x="190" y="427" width="55" height="17"/>
+              <rect x="115" y="463" width="130" height="17"/>
+            </g>
+          </svg></span></p>
+        </div>
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Manufacturer</p>
+          <p class="enzkr-specs__value">COSMAX, INC.</p>
+        </div>
+
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Responsible Distributor</p>
+          <p class="enzkr-specs__value">ENZACTA Co., Ltd.</p>
+        </div>
+        <div class="enzkr-specs__cell">
+          <p class="enzkr-specs__label">Customer Service</p>
+          <p class="enzkr-specs__value">ENZACTA Customer Center 02.565.4011</p>
+        </div>
+      </div>
+
+      <div class="enzkr-specs__section">
+        <h3 class="enzkr-specs__section-title">Full Ingredients</h3>
+        <div class="enzkr-specs__ingredients">
+          <button type="button" class="enzkr-specs__ingredients-toggle" aria-expanded="true" aria-controls="enzkr-specs-ingredients-text">
+            <span>View full ingredient list</span>
+            <span class="enzkr-specs__ingredients-icon" aria-hidden="true"></span>
+          </button>
+          <p class="enzkr-specs__ingredients-text" id="enzkr-specs-ingredients-text">Galactomyces Ferment Filtrate, Butylene Glycol, Glycerin, Water, 1,2-Hexanediol, Pentylene Glycol, Niacinamide, Propanediol, Ectoin, Oryza Sativa (Rice) Extract, Soluble Collagen, Ceramide NP, Hydrolyzed Collagen, Collagen, Collagen Extract, Adenosine, Beta-Glucan, Vincetoxicum Atratum Extract, Centella Asiatica Extract, Althaea Rosea Flower Extract, Sodium Hyaluronate, Allantoin, Hydrogenated Lecithin, Cholesterol, Tocopherol, Arginine, Methyl Gluceth-20, Dipropylene Glycol, Gluconolactone, Hydroxyethylcellulose, Xanthan Gum, PPG-13-Decyltetradeceth-24, Sodium Citrate, Citric Acid, Ethylhexylglycerin, Fragrance.</p>
+        </div>
+      </div>
+
+      <div class="enzkr-specs__section">
+        <h3 class="enzkr-specs__section-title enzkr-specs__section-title--reg">Precautions</h3>
+        <ol class="enzkr-specs__precautions">
+          <li>If red spots, swelling, itching, or other abnormal symptoms or side effects occur during or after use, especially when exposed to direct sunlight, discontinue use and consult a physician or other qualified healthcare professional.</li>
+          <li>Do not use on areas with wounds.</li>
+          <li>Storage and handling:
+            <ol type="A" class="enzkr-specs__precautions-sub">
+              <li>Keep out of reach of children.</li>
+              <li>Store away from direct sunlight.</li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+
+      <div class="enzkr-specs__section enzkr-specs__section--last">
+        <h3 class="enzkr-specs__section-title enzkr-specs__section-title--reg">Quality Assurance</h3>
+        <p class="enzkr-specs__qa-text">If there is any issue with this product, compensation will be provided in accordance with the Fair Trade Commission&rsquo;s Consumer Dispute Resolution Standards.</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<script src="assets/js/script.js"></script>
